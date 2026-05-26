@@ -20,6 +20,8 @@ from datetime import datetime
 from pathlib import Path
 
 import streamlit as st
+import gspread
+from google.oauth2.service_account import Credentials
 
 RESULTS_DIR = Path(__file__).parent / "results"
 RESULTS_DIR.mkdir(exist_ok=True)
@@ -310,13 +312,34 @@ LIKERT_LABELS = {1: "Strongly Disagree", 2: "Disagree", 3: "Neutral", 4: "Agree"
 # Helpers
 # ---------------------------------------------------------------------------
 
+@st.cache_resource
+def _get_sheet():
+    creds = Credentials.from_service_account_info(
+        st.secrets["gcp_service_account"],
+        scopes=["https://spreadsheets.google.com/feeds",
+                "https://www.googleapis.com/auth/drive"],
+    )
+    gc = gspread.authorize(creds)
+    return gc.open_by_key(st.secrets["gsheets"]["sheet_id"]).sheet1
+
+
 def save_response(row: dict):
+    # Always write locally as backup
     write_header = not RESPONSES_CSV.exists()
     with open(RESPONSES_CSV, "a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
         if write_header:
             writer.writeheader()
         writer.writerow(row)
+
+    # Write to Google Sheets
+    try:
+        sheet = _get_sheet()
+        if sheet.row_count < 1 or sheet.row_values(1) != CSV_FIELDS:
+            sheet.insert_row(CSV_FIELDS, 1)
+        sheet.append_row([str(row.get(f, "")) for f in CSV_FIELDS])
+    except Exception as e:
+        st.warning(f"Google Sheets save failed: {e}")
 
 
 def render_answer(scenario_id: int, condition: str):
