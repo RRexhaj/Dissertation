@@ -290,17 +290,17 @@ ANSWERS = {
 }
 
 LIKERT_QUESTIONS = [
-    ("trust_overall",      "I trust the accuracy of this answer."),
-    ("trust_rely",         "I would rely on this information if I were in this situation."),
-    ("trust_confident",    "I feel confident the information provided is correct."),
-    ("trust_clear",        "The answer was clear and easy to understand."),
-    ("trust_legal",        "I would feel comfortable using this information before contacting LESA or a lawyer."),
+    ("trust_accuracy",    "I trust the accuracy of this answer."),
+    ("trust_source",      "The answer showed me where this information comes from."),
+    ("trust_comprehend",  "After reading this answer, I understand what my legal rights or obligations are in this situation."),
+    ("trust_clear",       "The answer was clear and easy to understand."),
+    ("trust_legal",       "I would feel comfortable using this information before contacting LESA or a lawyer."),
 ]
 
 CSV_FIELDS = [
     "participant_id", "timestamp", "scenario_id", "scenario_title", "risk_level",
     "condition",
-    "trust_overall", "trust_rely", "trust_confident", "trust_clear", "trust_legal",
+    "trust_accuracy", "trust_source", "trust_comprehend", "trust_clear", "trust_legal",
     "open_comment",
 ]
 
