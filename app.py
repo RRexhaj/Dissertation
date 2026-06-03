@@ -311,8 +311,23 @@ LIKERT_LABELS = {1: "Strongly Disagree", 2: "Disagree", 3: "Neutral", 4: "Agree"
 # Helpers
 # ---------------------------------------------------------------------------
 
+def _webhook_url() -> str:
+    """Return the Apps Script web-app URL from secrets, or '' if not configured."""
+    try:
+        return str(st.secrets["webhook_url"]).strip()
+    except Exception:
+        return ""
+
+
 def save_response(row: dict):
-    # Always write locally as backup
+    """Persist one survey row.
+
+    On a DEPLOYED app the local CSV lives on Streamlit Cloud's ephemeral disk and
+    is wiped on every restart/sleep, so the Google Sheet (written via the Apps
+    Script webhook in secrets) is the real, durable store. The local CSV is kept
+    as a convenience backup for runs on your own machine.
+    """
+    # 1. Local CSV backup — authoritative only when running locally.
     write_header = not RESPONSES_CSV.exists()
     with open(RESPONSES_CSV, "a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
@@ -320,12 +335,21 @@ def save_response(row: dict):
             writer.writeheader()
         writer.writerow(row)
 
-    # Write to Google Sheets via Apps Script web app
-    try:
-        url = st.secrets["gsheets"]["web_app_url"]
-        requests.post(url, json=row, timeout=8)
-    except Exception as e:
-        st.warning(f"Google Sheets save failed: {e}")
+    # 2. Remote persistence — required for the deployed study.
+    url = _webhook_url()
+    if url:
+        try:
+            resp = requests.post(
+                url, json={"fields": CSV_FIELDS, "row": row}, timeout=10
+            )
+            resp.raise_for_status()
+        except Exception as e:
+            # Don't lose the participant: surface the problem so it gets noticed.
+            st.warning(
+                "Your answer was saved, but syncing to the research database had a "
+                "hiccup. You can continue — but if you are the researcher, check the "
+                f"webhook. ({e})"
+            )
 
 
 def render_answer(scenario_id: int, condition: str):
