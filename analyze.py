@@ -82,17 +82,20 @@ def load(csv_path: Path, keep_failed: bool) -> tuple[pd.DataFrame, pd.DataFrame,
     scen["condition"] = scen["condition"].astype(str).str.strip()
     scen["is_probe"] = pd.to_numeric(scen["is_probe"], errors="coerce").fillna(0).astype(int)
 
-    # Attention-check filtering.
+    # Attention-check filtering (only if the column exists in this export).
     info = {"n_participants_raw": int(scen["participant_id"].nunique())}
-    ap = pd.to_numeric(scen.get("attention_pass"), errors="coerce")
-    failed = set(scen.loc[ap == 0, "participant_id"])
-    info["n_failed_attention"] = len(failed)
-    if failed and not keep_failed:
-        scen = scen[~scen["participant_id"].isin(failed)]
-        final = final[~final["participant_id"].isin(failed)]
-        info["attention_filter"] = f"excluded {len(failed)} participant(s) who failed the attention check"
+    if "attention_pass" in scen.columns:
+        ap = pd.to_numeric(scen["attention_pass"], errors="coerce")
+        failed = set(scen.loc[ap == 0, "participant_id"])
+        info["n_failed_attention"] = len(failed)
+        if failed and not keep_failed:
+            scen = scen[~scen["participant_id"].isin(failed)]
+            final = final[~final["participant_id"].isin(failed)]
+            info["attention_filter"] = f"excluded {len(failed)} participant(s) who failed the attention check"
+        else:
+            info["attention_filter"] = "none applied" if not failed else "kept (--keep-failed)"
     else:
-        info["attention_filter"] = "none applied" if not failed else "kept (--keep-failed)"
+        info["attention_filter"] = "no attention-check column in export"
     info["n_participants_analysed"] = int(scen["participant_id"].nunique())
     return scen, final, info
 

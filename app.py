@@ -24,7 +24,6 @@ Trust is measured with a HYBRID scale per scenario (1-5 Likert):
     (reliable / accurate / confident / suspicious[reverse-coded]),
   * behavioural-intention items adapted from Davis (1989) TAM (use / rely),
   * two legal-context items (source transparency; comprehension of rights).
-One embedded attention check filters careless responding.
 
 Analysis (see analyze.py): Friedman test across the three conditions + Kendall's
 W effect size + pairwise Wilcoxon (Bonferroni); a paired Wilcoxon comparing the
@@ -218,13 +217,6 @@ TRUST_LABELS = {
         "t_rely":       "Inħossni komdu noqgħod fuq din it-tweġiba qabel ma nikkuntattja lil-LESA jew avukat.",
     },
 }
-
-# Attention check (pass == 2 / "Disagree") -----------------------------------
-ATTENTION_LABEL = {
-    "en": "Attention check — to show you are reading carefully, please select 'Disagree' for this statement.",
-    "mt": "Verifika ta' attenzjoni — biex turi li qed taqra bl-attenzjoni, jekk jogħġbok agħżel 'Ma naqbilx' għal din id-dikjarazzjoni.",
-}
-ATTENTION_PASS_VALUE = 2
 
 # ---------------------------------------------------------------------------
 # Demographics (stored values are English canonical; displayed localised)
@@ -557,7 +549,6 @@ CSV_FIELDS = [
     "condition", "confidence_shown", "is_probe",
     "t_reliable", "t_accurate", "t_confident", "t_wary",
     "t_source", "t_understand", "t_use", "t_rely",
-    "attention_check", "attention_pass",
     "manip_notice", "manip_most_trusted", "reflect_open",
     "comment",
 ]
@@ -673,7 +664,6 @@ if ss.stage == "consent":
     if st.button(T["start"], type="primary"):
         ss.participant_id = datetime.utcnow().strftime("%Y%m%d%H%M%S%f")
         ss.plan = build_plan()
-        ss.attn_pos = random.randrange(len(ss.plan))  # which scenario carries the check
         ss.idx = 0
         ss.demo = {}
         ss.stage = "demographics"
@@ -745,18 +735,6 @@ if ss.stage == "survey":
         if val is None:
             valid = False
 
-    # Embedded attention check on one randomly-chosen scenario.
-    attn_value = ""
-    if idx == ss.attn_pos:
-        attn_value = st.radio(
-            ATTENTION_LABEL[L],
-            options=[1, 2, 3, 4, 5],
-            format_func=lambda x: f"{x} — {LIKERT_LABELS[L][x]}",
-            index=None, horizontal=True, key=f"{idx}_attn",
-        )
-        if attn_value is None:
-            valid = False
-
     comment = st.text_area(T["comment"], key=f"{idx}_comment", height=80)
 
     if st.button(T["next"], type="primary", disabled=not valid):
@@ -774,9 +752,6 @@ if ss.stage == "survey":
             "confidence_shown": ANSWERS[key][condition].get("confidence", ""),
             "is_probe": int(is_probe),
             **ratings,
-            "attention_check": attn_value if idx == ss.attn_pos else "",
-            "attention_pass": (int(attn_value == ATTENTION_PASS_VALUE)
-                               if idx == ss.attn_pos else ""),
             "comment": comment.strip(),
         })
         ss.idx += 1
