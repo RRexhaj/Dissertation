@@ -16,6 +16,7 @@ Run:
 
 import csv
 import random
+import re
 from datetime import datetime
 from pathlib import Path
 
@@ -361,6 +362,15 @@ def render_answer(scenario_id: int, condition: str):
         colour = {"High": "🟢", "Medium": "🟡", "Low": "🔴"}.get(label, "⚪")
         st.info(f"{colour} **Confidence: {label}** — {k_a}/{k_t} sources align")
     st.markdown(data["text"])
+    if condition == "RAG + Transparency":
+        # Dedicated Sources panel — mirrors the deployed chatbot and reinforces
+        # the transparency manipulation. Citations are pulled from the inline
+        # [...] references in the answer so the two never drift apart.
+        cites = list(dict.fromkeys(re.findall(r"\[([^\]]+)\]", data["text"])))
+        if cites:
+            st.markdown("**📄 Sources**")
+            for c in cites:
+                st.markdown(f"- `{c}`")
 
 
 # ---------------------------------------------------------------------------
