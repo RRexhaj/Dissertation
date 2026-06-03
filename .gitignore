@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+# Participant data — durable store is the Google Sheet; never commit raw responses
+results/
+# Secrets (webhook URL etc.) live in Streamlit Cloud Secrets, never in the repo
+.streamlit/secrets.toml
