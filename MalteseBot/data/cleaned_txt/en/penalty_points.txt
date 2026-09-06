@@ -1,0 +1,54 @@
+MALTESE ROAD TRAFFIC PENALTY POINTS SYSTEM
+Source: Motor Vehicles (Driving Licences) Regulations, S.L. 65.18 arts 36A–40, and the Sixth Schedule
+
+PENALTY POINT SYSTEM — KEY RULES
+- Every driver starts with zero penalty points.
+- Penalty points for each contravention are imposed by the Court of Magistrates or the Commissioners for Justice and recorded in the Authority's database (S.L. 65.18 art. 36B / 40).
+- A full driving licence is revoked if the holder accumulates 12 penalty points or more within any 12-month period (S.L. 65.18 art. 36C).
+- The same 12-point threshold applies to holders of a probationary (new-driver) licence (S.L. 65.18 art. 40(3)). New drivers hold a probationary licence for a 3-year period (S.L. 65.18 art. 38).
+- After a first revocation, the driver may obtain a new licence after 2 months without re-sitting the driving test (S.L. 65.18 art. 36E(a)).
+- A second revocation within three years again requires a 2-month wait and a fresh application; repeated revocations carry progressively longer consequences, up to re-sitting the test.
+- A holder with 11 points or fewer may reduce recorded points by 50% by passing an approved safety-awareness test, no more than once every two years (S.L. 65.18 art. 36D).
+
+INDICATIVE OFFENCE / PENALTY POINT SCHEDULE (S.L. 65.18 Sixth Schedule)
+The number of points per offence is set out in the Sixth Schedule; indicative values include:
+
+Speeding offences:
+- Exceeding the limit by 1-10 km/h: 1 penalty point
+- Exceeding the limit by 11-20 km/h: 2 penalty points
+- Exceeding the limit by 21-30 km/h: 3 penalty points
+- Exceeding the limit by 31-40 km/h: 4 penalty points
+- Exceeding the limit by more than 40 km/h: 5 penalty points
+
+Mobile phone and distraction offences:
+- Using a hand-held mobile phone while driving: 3 penalty points
+
+Seatbelt offences:
+- Failure to wear a seatbelt (driver): 3 penalty points
+- Failure to ensure a child passenger is restrained: 3 penalty points
+
+Alcohol and drug offences:
+- Driving while exceeding the prescribed alcohol limit: penalty points plus disqualification
+- Refusing a breath test when required by police: penalty points equivalent to exceeding the limit
+- Driving under the influence of drugs: penalty points plus disqualification
+
+Traffic light and sign offences:
+- Failing to stop at a red traffic light: 4 penalty points
+- Failing to give way as required by a Give Way sign: 2 penalty points
+- Failing to stop at a Stop sign: 3 penalty points
+
+Overtaking offences:
+- Dangerous overtaking: 4 penalty points
+- Overtaking on a solid white line: 3 penalty points
+
+Other serious offences:
+- Failure to stop after a road accident (hit and run): serious offence, penalty points plus possible prosecution
+- Driving without a valid driving licence: penalty points plus prosecution
+- Driving without valid vehicle insurance: penalty points plus prosecution
+- Reckless or dangerous driving: penalty points plus prosecution
+
+FINE STRUCTURE FOR CONTRAVENTIONS (Cap. 65 art. 62 — special procedure)
+- Contraventions carry a fixed penalty stated on the notice.
+- If not paid within 15 days: the fine doubles.
+- If not paid within 30 days: the fine triples.
+- Continued non-payment leads to referral to the Commissioner for Justice and potential court proceedings.

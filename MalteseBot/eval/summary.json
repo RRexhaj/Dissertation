@@ -1,0 +1,102 @@
+{
+  "overall": {
+    "RAG": {
+      "n": 24,
+      "keyword_precision": 0.882,
+      "citation_rate": 1.0,
+      "hallucination_rate": 0.0,
+      "rouge_l": 0.249
+    },
+    "Baseline": {
+      "n": 24,
+      "keyword_precision": 0.549,
+      "citation_rate": 0.0,
+      "hallucination_rate": 0.375,
+      "rouge_l": 0.22
+    }
+  },
+  "by_language": {
+    "en": {
+      "RAG": {
+        "n": 12,
+        "keyword_precision": 0.82,
+        "citation_rate": 1.0,
+        "hallucination_rate": 0.0,
+        "rouge_l": 0.262
+      },
+      "Baseline": {
+        "n": 12,
+        "keyword_precision": 0.5,
+        "citation_rate": 0.0,
+        "hallucination_rate": 0.333,
+        "rouge_l": 0.265
+      }
+    },
+    "mt": {
+      "RAG": {
+        "n": 12,
+        "keyword_precision": 0.945,
+        "citation_rate": 1.0,
+        "hallucination_rate": 0.0,
+        "rouge_l": 0.236
+      },
+      "Baseline": {
+        "n": 12,
+        "keyword_precision": 0.597,
+        "citation_rate": 0.0,
+        "hallucination_rate": 0.417,
+        "rouge_l": 0.175
+      }
+    }
+  },
+  "by_difficulty": {
+    "easy": {
+      "RAG": {
+        "n": 8,
+        "keyword_precision": 0.938,
+        "citation_rate": 1.0,
+        "hallucination_rate": 0.0,
+        "rouge_l": 0.297
+      },
+      "Baseline": {
+        "n": 8,
+        "keyword_precision": 0.562,
+        "citation_rate": 0.0,
+        "hallucination_rate": 0.5,
+        "rouge_l": 0.261
+      }
+    },
+    "medium": {
+      "RAG": {
+        "n": 10,
+        "keyword_precision": 0.833,
+        "citation_rate": 1.0,
+        "hallucination_rate": 0.0,
+        "rouge_l": 0.239
+      },
+      "Baseline": {
+        "n": 10,
+        "keyword_precision": 0.567,
+        "citation_rate": 0.0,
+        "hallucination_rate": 0.3,
+        "rouge_l": 0.242
+      }
+    },
+    "hard": {
+      "RAG": {
+        "n": 6,
+        "keyword_precision": 0.889,
+        "citation_rate": 1.0,
+        "hallucination_rate": 0.0,
+        "rouge_l": 0.202
+      },
+      "Baseline": {
+        "n": 6,
+        "keyword_precision": 0.5,
+        "citation_rate": 0.0,
+        "hallucination_rate": 0.333,
+        "rouge_l": 0.129
+      }
+    }
+  }
+}

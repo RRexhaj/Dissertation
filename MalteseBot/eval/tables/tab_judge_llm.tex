@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\caption{Agreement between the two LLM judges (judge 1 = GPT-4.1, judge 2 = GPT-4o) over every generated answer: Cohen's $\kappa$, percentage agreement and the rate flagged by each judge.}
+\label{tab:judge-llm}
+{\def\arraystretch{1.3}
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Criterion} & \textbf{Subset} & \textbf{$n$} & \textbf{$\kappa$} & \textbf{Agreement} & \textbf{Rate judge 1} & \textbf{Rate judge 2} \\
+\midrule
+Incorrect claim & All answers & 864 & 0.82 & 93.9\% & 22.1\% & 21.1\% \\
+ & RAG & 432 & 0.57 & 97.7\% & 3.0\% & 2.5\% \\
+ & Baseline & 432 & 0.79 & 90.0\% & 41.2\% & 39.6\% \\
+Omission & All answers & 864 & 0.85 & 93.2\% & 30.8\% & 34.6\% \\
+ & RAG & 432 & 0.65 & 95.8\% & 4.6\% & 7.9\% \\
+ & Baseline & 432 & 0.80 & 90.5\% & 56.9\% & 61.3\% \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

@@ -1,0 +1,1202 @@
+{
+  "R001": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN01",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R002": {
+    "model": "gpt-4.1",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN07",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R003": {
+    "model": "gpt-4o-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN04",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R004": {
+    "model": "gpt-4.1-nano",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT12",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R005": {
+    "model": "gpt-4o-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT07",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R006": {
+    "model": "gpt-4.1",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT03",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R007": {
+    "model": "gpt-5.5",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT05",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R008": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT02",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R009": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN09",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R010": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN01",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R011": {
+    "model": "gpt-4o-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT11",
+    "halluc_j1": "1",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R012": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN03",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R013": {
+    "model": "gpt-5.5",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN01",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R014": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT05",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R015": {
+    "model": "gpt-4.1-nano",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT03",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R016": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN06",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R017": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN11",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R018": {
+    "model": "gpt-4.1",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT07",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R019": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN10",
+    "halluc_j1": "0",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R020": {
+    "model": "gpt-4.1-nano",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN04",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R021": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT01",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R022": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT04",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R023": {
+    "model": "gpt-4.1-nano",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT11",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R024": {
+    "model": "gpt-4o-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN09",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R025": {
+    "model": "gpt-4.1",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT10",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R026": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT12",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R027": {
+    "model": "gpt-5.5",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT04",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R028": {
+    "model": "gpt-4.1",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN06",
+    "halluc_j1": "0",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R029": {
+    "model": "gpt-4.1",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN02",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R030": {
+    "model": "gpt-4.1-nano",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN02",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R031": {
+    "model": "gpt-4.1-nano",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN08",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R032": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT09",
+    "halluc_j1": "1",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R033": {
+    "model": "gpt-4.1",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT02",
+    "halluc_j1": "1",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R034": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT12",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R035": {
+    "model": "gpt-5-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN12",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R036": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT06",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R037": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN12",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R038": {
+    "model": "gpt-4.1",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN06",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R039": {
+    "model": "gpt-5.5",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT10",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R040": {
+    "model": "gpt-4.1",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT12",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R041": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT07",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R042": {
+    "model": "gpt-4o-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN12",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R043": {
+    "model": "gpt-4.1",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT03",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R044": {
+    "model": "gpt-4o-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN11",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R045": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT11",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R046": {
+    "model": "gpt-4o-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT10",
+    "halluc_j1": "0",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R047": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT04",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R048": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN06",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R049": {
+    "model": "gpt-4.1-nano",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT02",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "0"
+  },
+  "R050": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN05",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R051": {
+    "model": "gpt-5-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN05",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R052": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN02",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R053": {
+    "model": "gpt-4o-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN01",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R054": {
+    "model": "gpt-4o-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT07",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R055": {
+    "model": "gpt-5-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT03",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R056": {
+    "model": "gpt-4.1",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT04",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R057": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT07",
+    "halluc_j1": "1",
+    "omission_j1": "0",
+    "halluc_j2": "1",
+    "omission_j2": "0"
+  },
+  "R058": {
+    "model": "gpt-5.5",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN03",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R059": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN10",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R060": {
+    "model": "gpt-4.1-nano",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN04",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R061": {
+    "model": "gpt-5-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT01",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R062": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT11",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R063": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN05",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R064": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT02",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R065": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN07",
+    "halluc_j1": "0",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R066": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT05",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R067": {
+    "model": "gpt-4o-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN01",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R068": {
+    "model": "gpt-5.5",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN08",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R069": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN09",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R070": {
+    "model": "gpt-4.1-nano",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN05",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R071": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN03",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R072": {
+    "model": "gpt-4o-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT09",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R073": {
+    "model": "gpt-4o-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT02",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R074": {
+    "model": "gpt-4.1-nano",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT10",
+    "halluc_j1": "0",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R075": {
+    "model": "gpt-4.1",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN04",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R076": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN11",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R077": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT06",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R078": {
+    "model": "gpt-4o-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT12",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R079": {
+    "model": "gpt-5-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT09",
+    "halluc_j1": "0",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R080": {
+    "model": "gpt-5-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN03",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R081": {
+    "model": "gpt-5.5",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN10",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R082": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT01",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R083": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT09",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R084": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT10",
+    "halluc_j1": "0",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R085": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN04",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R086": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT08",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R087": {
+    "model": "gpt-4o-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT12",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R088": {
+    "model": "gpt-4o-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN08",
+    "halluc_j1": "1",
+    "omission_j1": "0",
+    "halluc_j2": "1",
+    "omission_j2": "0"
+  },
+  "R089": {
+    "model": "gpt-5.5",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT02",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R090": {
+    "model": "gpt-5.5",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT09",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "1",
+    "omission_j2": "0"
+  },
+  "R091": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN04",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R092": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN12",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R093": {
+    "model": "gpt-4.1-nano",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT04",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R094": {
+    "model": "gpt-4.1",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN08",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R095": {
+    "model": "gpt-4.1-nano",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN06",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R096": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN08",
+    "halluc_j1": "0",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R097": {
+    "model": "gpt-5.5",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN09",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R098": {
+    "model": "gpt-5.5",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT01",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R099": {
+    "model": "gpt-4.1",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN05",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R100": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT10",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R101": {
+    "model": "gpt-5-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN07",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R102": {
+    "model": "gpt-4.1-nano",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT07",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R103": {
+    "model": "gpt-5-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT10",
+    "halluc_j1": "0",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R104": {
+    "model": "gpt-5-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT08",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R105": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT03",
+    "halluc_j1": "0",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R106": {
+    "model": "gpt-5-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN06",
+    "halluc_j1": "0",
+    "omission_j1": "1",
+    "halluc_j2": "0",
+    "omission_j2": "1"
+  },
+  "R107": {
+    "model": "gpt-5-mini",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT02",
+    "halluc_j1": "1",
+    "omission_j1": "0",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R108": {
+    "model": "gpt-4.1",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN02",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R109": {
+    "model": "gpt-5-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN01",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R110": {
+    "model": "gpt-4.1-nano",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN07",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R111": {
+    "model": "gpt-5.5",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN01",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R112": {
+    "model": "gpt-4.1",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT05",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R113": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN07",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R114": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN08",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R115": {
+    "model": "gpt-4.1-nano",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT03",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R116": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN02",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R117": {
+    "model": "gpt-4.1-nano",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "EN05",
+    "halluc_j1": "1",
+    "omission_j1": "1",
+    "halluc_j2": "1",
+    "omission_j2": "1"
+  },
+  "R118": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "Baseline",
+    "run": "1",
+    "id": "MT08",
+    "halluc_j1": "1",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R119": {
+    "model": "gpt-4o-mini",
+    "condition": "RAG",
+    "run": "1",
+    "id": "EN07",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  },
+  "R120": {
+    "model": "gpt-4o-2024-11-20",
+    "condition": "RAG",
+    "run": "1",
+    "id": "MT03",
+    "halluc_j1": "0",
+    "omission_j1": "0",
+    "halluc_j2": "0",
+    "omission_j2": "0"
+  }
+}

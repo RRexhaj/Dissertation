@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\caption{Fact precision (alias) and baseline hallucination rate by language and model (run 1; 12 English and 12 Maltese questions). Last column: Mann--Whitney $U$ test of the per-question retrieval gain, English versus Maltese.}
+\label{tab:bylang}
+{\def\arraystretch{1.3}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Model} & \textbf{EN RAG} & \textbf{EN base} & \textbf{EN base halluc.} & \textbf{MT RAG} & \textbf{MT base} & \textbf{MT base halluc.} & \textbf{$p$ (EN vs MT gain)} \\
+\midrule
+GPT-4o & 1.00 & 0.76 & 16.7\% & 1.00 & 0.72 & 33.3\% & 0.587 \\
+GPT-4o mini & 0.93 & 0.47 & 58.3\% & 0.96 & 0.58 & 66.7\% & 0.650 \\
+GPT-4.1 & 1.00 & 0.79 & 25.0\% & 1.00 & 0.79 & 50.0\% & 1.000 \\
+GPT-4.1 nano & 0.93 & 0.43 & 58.3\% & 0.93 & 0.54 & 58.3\% & 0.511 \\
+GPT-5 mini & 0.94 & 0.51 & 58.3\% & 1.00 & 0.68 & 41.7\% & 0.567 \\
+GPT-5.5 & 0.94 & 0.75 & 25.0\% & 1.00 & 0.71 & 33.3\% & 0.301 \\
+\bottomrule
+\end{tabular}}
+}
+\end{table}

@@ -1,0 +1,25 @@
+\begin{table}[H]
+\centering
+\caption{Run-to-run stability over 3 independent runs: mean $\pm$ SD of the per-run cell means for fact precision (alias) and hallucination (judge 1), the share of questions whose hallucination flag was identical in every run, and the mean within-question SD of fact precision.}
+\label{tab:stability}
+{\def\arraystretch{1.3}
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Model} & \textbf{Condition} & \textbf{Fact precision} & \textbf{Hallucination} & \textbf{Flag consistency} & \textbf{Within-question SD} \\
+\midrule
+GPT-4o & RAG & 1.00 $\pm$ 0.000 & 1.4\% $\pm$ 2.4\% & 96\% & 0.000 \\
+ & Baseline & 0.74 $\pm$ 0.000 & 22.2\% $\pm$ 4.8\% & 79\% & 0.000 \\
+GPT-4o mini & RAG & 0.96 $\pm$ 0.017 & 5.6\% $\pm$ 2.4\% & 92\% & 0.020 \\
+ & Baseline & 0.53 $\pm$ 0.000 & 56.9\% $\pm$ 4.8\% & 92\% & 0.000 \\
+GPT-4.1 & RAG & 1.00 $\pm$ 0.000 & 0.0\% $\pm$ 0.0\% & 100\% & 0.000 \\
+ & Baseline & 0.77 $\pm$ 0.016 & 37.5\% $\pm$ 0.0\% & 75\% & 0.016 \\
+GPT-4.1 nano & RAG & 0.95 $\pm$ 0.019 & 6.9\% $\pm$ 4.8\% & 88\% & 0.034 \\
+ & Baseline & 0.49 $\pm$ 0.012 & 61.1\% $\pm$ 4.8\% & 92\% & 0.012 \\
+GPT-5 mini & RAG & 0.98 $\pm$ 0.012 & 1.4\% $\pm$ 2.4\% & 96\% & 0.024 \\
+ & Baseline & 0.57 $\pm$ 0.042 & 47.2\% $\pm$ 2.4\% & 62\% & 0.095 \\
+GPT-5.5 & RAG & 0.97 $\pm$ 0.000 & 2.8\% $\pm$ 2.4\% & 92\% & 0.000 \\
+ & Baseline & 0.78 $\pm$ 0.055 & 22.2\% $\pm$ 8.7\% & 71\% & 0.086 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

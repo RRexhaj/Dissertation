@@ -1,0 +1,22 @@
+\begin{table}[H]
+\centering
+\caption{Retrieval ablation over the 24 gold queries: Hit@1, Hit@5 and mean reciprocal rank (MRR) of the expected statutory provision for four retrieval configurations and two embedding models, mean retrieval latency, and (large embedder only) downstream GPT-4o fact precision (alias) and hallucination rate when each configuration supplies the context.}
+\label{tab:ablation}
+{\def\arraystretch{1.3}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccccc}
+\toprule
+\textbf{Embedder} & \textbf{Configuration} & \textbf{Hit@1} & \textbf{Hit@5} & \textbf{MRR} & \textbf{MRR EN} & \textbf{MRR MT} & \textbf{Latency (s)} & \textbf{Downstream precision} & \textbf{Downstream halluc.} \\
+\midrule
+3-large & BM25 only & 0.71 & 1.00 & 0.84 & 0.78 & 0.90 & 0.27 & 0.95 & 4.2\% \\
+ & Dense only & 0.46 & 1.00 & 0.72 & 0.79 & 0.65 & 0.21 & 1.00 & 0.0\% \\
+ & Hybrid (0.6/0.4) & 0.67 & 1.00 & 0.82 & 0.78 & 0.86 & 0.21 & 0.98 & 0.0\% \\
+ & Hybrid + rerank (deployed) & 0.67 & 1.00 & 0.81 & 0.71 & 0.92 & 1.20 & 1.00 & 0.0\% \\
+3-small & BM25 only & 0.71 & 1.00 & 0.84 & 0.78 & 0.90 & 0.18 & -- & -- \\
+ & Dense only & 0.54 & 1.00 & 0.74 & 0.72 & 0.76 & 0.17 & -- & -- \\
+ & Hybrid (0.6/0.4) & 0.71 & 1.00 & 0.84 & 0.78 & 0.90 & 0.17 & -- & -- \\
+ & Hybrid + rerank (deployed) & 0.67 & 1.00 & 0.81 & 0.71 & 0.92 & 1.13 & -- & -- \\
+\bottomrule
+\end{tabular}}
+}
+\end{table}

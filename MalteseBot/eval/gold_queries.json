@@ -1,0 +1,178 @@
+{
+  "_meta": {
+    "description": "Gold-standard evaluation set for MalteseLegalBot (Cap. 65 traffic law). 24 questions, 12 EN / 12 MT, balanced across topics and difficulty. Every fact and citation in this set was verified on 2026-06-01 against the official consolidated statutes on legislation.mt (Cap. 65 Traffic Regulation Ordinance; S.L. 65.11 Motor Vehicles Regulations reg. 127; S.L. 65.18 Motor Vehicles (Driving Licences) Regulations; S.L. 65.32 Micromobility Regulations).",
+    "scoring": "keyword precision = fraction of key_facts present (normalised substring match); citation validity = expected citation tag present and cited tags within known set; hallucination = GPT-4o judge vs reference; ROUGE-L vs reference_answer.",
+    "verification_notes": "Speed: S.L. 65.11 reg. 127 sets 50 km/h in towns/villages and 80 km/h outside; Malta has no motorways and no fixed statutory school-zone figure (the Authority may set lower signed limits). Alcohol: Cap. 65 art. 15 sets the general limit at 50 mg/100ml blood (0.05%) / 22 ug/100ml breath, 20 mg (0.02%) for commercial and probationary drivers, and 0 for passenger-carrying drivers. Penalty points: S.L. 65.18 art. 36C revokes a licence at 12 points in any 12-month period, with the same threshold for probationary (new) drivers."
+  },
+  "queries": [
+    {
+      "id": "EN01", "lang": "en", "topic": "speed_limits", "difficulty": "easy",
+      "question": "What is the speed limit in a built-up area in Malta?",
+      "reference_answer": "In a built-up area (town or village) the default speed limit is 50 km/h unless a road sign indicates otherwise.",
+      "key_facts": ["50 km/h", "built-up"],
+      "expected_citations": ["S.L. 65.11"]
+    },
+    {
+      "id": "EN02", "lang": "en", "topic": "speed_limits", "difficulty": "medium",
+      "question": "How fast can I legally drive on the open road in Malta, and is there a motorway limit?",
+      "reference_answer": "Outside towns and villages the open-road limit is 80 km/h. Malta has no motorways, so 80 km/h is the maximum general speed limit; the Authority may set lower signed limits (for example 30 km/h near schools or in residential zones).",
+      "key_facts": ["80 km/h", "no motorway"],
+      "expected_citations": ["S.L. 65.11"]
+    },
+    {
+      "id": "EN03", "lang": "en", "topic": "fines_payment", "difficulty": "easy",
+      "question": "What happens to a traffic fine if I do not pay it within 15 days?",
+      "reference_answer": "If the fine is not paid within 15 days of issue it doubles, and if still unpaid after 30 days it triples.",
+      "key_facts": ["double", "15 days"],
+      "expected_citations": ["Cap. 65"]
+    },
+    {
+      "id": "EN04", "lang": "en", "topic": "fines_payment", "difficulty": "medium",
+      "question": "Where can I pay a contravention online and what happens if I leave it unpaid for a month?",
+      "reference_answer": "You can pay online at contraventions.gov.mt within 15 days; the fine doubles after 15 days and triples after 30 days.",
+      "key_facts": ["contraventions.gov.mt", "triple", "30 days"],
+      "expected_citations": ["Cap. 65", "Driver FAQ"]
+    },
+    {
+      "id": "EN05", "lang": "en", "topic": "alcohol", "difficulty": "easy",
+      "question": "What is the general blood alcohol limit for driving in Malta?",
+      "reference_answer": "The general limit is 50 mg of alcohol per 100 ml of blood (0.05 g/100ml), equivalent to 22 microgrammes per 100 ml of breath.",
+      "key_facts": ["50 mg", "0.05"],
+      "expected_citations": ["Cap. 65"]
+    },
+    {
+      "id": "EN06", "lang": "en", "topic": "alcohol", "difficulty": "medium",
+      "question": "Can I legally refuse a breathalyser test when a police officer asks me to take one?",
+      "reference_answer": "No. Refusing a breath test without reasonable excuse is an offence treated as equivalent to exceeding the drink-drive limit.",
+      "key_facts": ["offence", "equivalent"],
+      "expected_citations": ["Cap. 65"]
+    },
+    {
+      "id": "EN07", "lang": "en", "topic": "alcohol", "difficulty": "hard",
+      "question": "I only got my licence last year. What blood alcohol limit applies to me and why?",
+      "reference_answer": "As a new driver on a probationary licence you are subject to the lower limit of 20 mg per 100 ml of blood (0.02 g/100ml), the same reduced limit that applies to commercial drivers.",
+      "key_facts": ["20 mg", "0.02", "probationary"],
+      "expected_citations": ["Cap. 65"]
+    },
+    {
+      "id": "EN08", "lang": "en", "topic": "demerit_points", "difficulty": "easy",
+      "question": "How many penalty points lead to a licence suspension in Malta, and over what period?",
+      "reference_answer": "Accumulating 12 penalty points within any 12-month period leads to revocation of the licence; after a first revocation a new licence can be obtained after two months.",
+      "key_facts": ["12", "12-month"],
+      "expected_citations": ["S.L. 65.18"]
+    },
+    {
+      "id": "EN09", "lang": "en", "topic": "demerit_points", "difficulty": "hard",
+      "question": "I am a new driver and I have 7 penalty points. Am I about to lose my licence?",
+      "reference_answer": "Not on points alone. New drivers on a probationary licence face revocation at 12 points, the same threshold as full licences, so 7 points is still below the limit (although the lower alcohol limit and other probationary rules still apply).",
+      "key_facts": ["12", "probationary"],
+      "expected_citations": ["S.L. 65.18"]
+    },
+    {
+      "id": "EN10", "lang": "en", "topic": "accidents", "difficulty": "medium",
+      "question": "After a minor crash the other driver wants to settle privately. Am I obliged to, or can I involve my insurance?",
+      "reference_answer": "You must stop and exchange details, but you are not obliged to settle privately and may involve your insurance.",
+      "key_facts": ["stop", "exchange", "not obliged", "insurance"],
+      "expected_citations": ["Cap. 65"]
+    },
+    {
+      "id": "EN11", "lang": "en", "topic": "licences", "difficulty": "medium",
+      "question": "What is the minimum age to hold a full category B car licence in Malta?",
+      "reference_answer": "The minimum age for a full category B licence is 18 (a learner may start at 17).",
+      "key_facts": ["18"],
+      "expected_citations": ["S.L. 65.18"]
+    },
+    {
+      "id": "EN12", "lang": "en", "topic": "micromobility", "difficulty": "hard",
+      "question": "What are the speed limits for an e-kickscooter on the road compared with on a footpath?",
+      "reference_answer": "An e-kickscooter may do up to 20 km/h on roads and 10 km/h on footpaths, promenades and shared paths.",
+      "key_facts": ["20 km/h", "10 km/h", "footpath"],
+      "expected_citations": ["S.L. 65.32"]
+    },
+
+    {
+      "id": "MT01", "lang": "mt", "topic": "speed_limits", "difficulty": "easy",
+      "question": "X'inhu l-limitu tal-veloċità f'żona urbana f'Malta?",
+      "reference_answer": "F'żona urbana (belt jew raħal) l-limitu hu 50 km/s sakemm ma jkunx indikat mod ieħor b'sinjal.",
+      "key_facts": ["50"],
+      "expected_citations": ["S.L. 65.11"]
+    },
+    {
+      "id": "MT02", "lang": "mt", "topic": "speed_limits", "difficulty": "medium",
+      "question": "Kemm nista' nsuq malajr fuq triq miftuħa, u hemm limitu għall-awtostrada?",
+      "reference_answer": "Barra l-bliet u l-irħula l-limitu hu 80 km/s. Malta m'għandhiex awtostradi, mela 80 km/s hu l-limitu ġenerali massimu; l-Awtorità tista' tistabbilixxi limiti aktar baxxi indikati b'sinjali (eż. 30 km/s ħdejn skejjel).",
+      "key_facts": ["80", "awtostrad"],
+      "expected_citations": ["S.L. 65.11"]
+    },
+    {
+      "id": "MT03", "lang": "mt", "topic": "fines_payment", "difficulty": "easy",
+      "question": "X'jiġri mal-multa jekk ma nħallashiex fi żmien 15-il jum?",
+      "reference_answer": "Jekk il-multa ma titħallasx fi 15-il jum tirdoppja, u wara 30 jum tittripla.",
+      "key_facts": ["doppja", "15"],
+      "expected_citations": ["Cap. 65", "Kap. 65"]
+    },
+    {
+      "id": "MT04", "lang": "mt", "topic": "fines_payment", "difficulty": "medium",
+      "question": "Fejn nista' nħallas kontravvenzjoni online, u x'jiġri wara 30 jum?",
+      "reference_answer": "Tista' tħallas online fuq contraventions.gov.mt; il-multa tirdoppja wara 15-il jum u tittripla wara 30 jum.",
+      "key_facts": ["contraventions.gov.mt", "tripla", "30"],
+      "expected_citations": ["Cap. 65", "Kap. 65", "Driver FAQ"]
+    },
+    {
+      "id": "MT05", "lang": "mt", "topic": "alcohol", "difficulty": "easy",
+      "question": "X'inhu l-limitu ġenerali tal-alkoħol fid-demm għas-sewqan?",
+      "reference_answer": "Il-limitu ġenerali hu 50 mg ta' alkoħol kull 100 ml demm (0.05 g/100ml), jew 22 mikrogramma kull 100 ml nifs.",
+      "key_facts": ["50", "0.05"],
+      "expected_citations": ["Cap. 65", "Kap. 65"]
+    },
+    {
+      "id": "MT06", "lang": "mt", "topic": "alcohol", "difficulty": "medium",
+      "question": "Nista' nirrifjuta test tan-nifs jekk jitolbni l-pulizija?",
+      "reference_answer": "Le. Ir-rifjut ta' test tan-nifs bla skuża raġonevoli huwa reat ittrattat bħal qbiż tal-limitu tal-alkoħol.",
+      "key_facts": ["reat", "rifjut"],
+      "expected_citations": ["Cap. 65", "Kap. 65"]
+    },
+    {
+      "id": "MT07", "lang": "mt", "topic": "alcohol", "difficulty": "hard",
+      "question": "X'inhu l-limitu tal-alkoħol għal sewwieq professjonali jew ġdid?",
+      "reference_answer": "Għal sewwieqa ta' vetturi kummerċjali u sewwieqa ġodda (probatorji) l-limitu hu aktar baxx: 20 mg kull 100 ml (0.02 g/100ml).",
+      "key_facts": ["20", "0.02"],
+      "expected_citations": ["Cap. 65", "Kap. 65"]
+    },
+    {
+      "id": "MT08", "lang": "mt", "topic": "demerit_points", "difficulty": "easy",
+      "question": "Kemm-il punt tal-penali jwassal għal sospensjoni tal-liċenzja, u f'liema perjodu?",
+      "reference_answer": "Tnax-il (12) punt fi kwalunkwe perjodu ta' 12-il xahar iwasslu għal revoka tal-liċenzja; wara l-ewwel revoka tista' tinkiseb liċenzja ġdida wara xahrejn.",
+      "key_facts": ["12"],
+      "expected_citations": ["S.L. 65.18"]
+    },
+    {
+      "id": "MT09", "lang": "mt", "topic": "demerit_points", "difficulty": "hard",
+      "question": "Jien sewwieq ġdid b'7 punti tal-penali. Qiegħed f'riskju li nitlef il-liċenzja?",
+      "reference_answer": "Mhux fuq il-punti biss. Sewwieqa ġodda fuq liċenzja probatorja jiġu revokati b'12-il punt, l-istess limitu bħal liċenzja sħiħa, mela 7 punti għadhom taħt il-limitu (għalkemm il-limitu aktar baxx tal-alkoħol u regoli oħra xorta japplikaw).",
+      "key_facts": ["12", "probatorja"],
+      "expected_citations": ["S.L. 65.18"]
+    },
+    {
+      "id": "MT10", "lang": "mt", "topic": "accidents", "difficulty": "medium",
+      "question": "Wara inċident żgħir, obbligat insolvi privatament jew nista' ninvolvi l-assigurazzjoni?",
+      "reference_answer": "Trid tieqaf u tiskambja d-dettalji, imma m'intix obbligat issolvi privatament u tista' tinvolvi l-assigurazzjoni.",
+      "key_facts": ["tieqaf", "tiskambja", "assigurazzjoni"],
+      "expected_citations": ["Cap. 65", "Kap. 65"]
+    },
+    {
+      "id": "MT11", "lang": "mt", "topic": "licences", "difficulty": "medium",
+      "question": "X'inhi l-età minima biex ikolli liċenzja sħiħa tal-karozza kategorija B?",
+      "reference_answer": "L-età minima għal liċenzja sħiħa kategorija B hi 18-il sena (learner minn 17).",
+      "key_facts": ["18"],
+      "expected_citations": ["S.L. 65.18"]
+    },
+    {
+      "id": "MT12", "lang": "mt", "topic": "micromobility", "difficulty": "hard",
+      "question": "X'inhi l-veloċità massima ta' e-kickscooter fit-triq u fuq il-bankina?",
+      "reference_answer": "E-kickscooter jista' jagħmel sa 20 km/s fit-triq u 10 km/s fuq bankini u promenadi.",
+      "key_facts": ["20", "10", "bankina"],
+      "expected_citations": ["S.L. 65.32"]
+    }
+  ]
+}

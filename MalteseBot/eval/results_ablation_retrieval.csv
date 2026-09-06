@@ -1,0 +1,193 @@
+embedder,config,id,lang,topic,difficulty,hit1,hit5,rr,latency_s,top_citations
+text-embedding-3-large,bm25,EN01,en,speed_limits,easy,1,1,1.0,1.486,S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | S.L. 65.11 reg. 127
+text-embedding-3-large,bm25,EN02,en,speed_limits,medium,1,1,1.0,0.223,S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 art. 15
+text-embedding-3-large,bm25,EN03,en,fines_payment,easy,0,1,0.333,0.257,Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-large,bm25,EN04,en,fines_payment,medium,1,1,1.0,0.234,Driver FAQ (payment_options.txt) | Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt)
+text-embedding-3-large,bm25,EN05,en,alcohol,easy,0,1,0.5,0.194,Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | S.L. 65.11 reg. 127 | S.L. 65.18 reg. 38 | Cap. 65 art. 15G
+text-embedding-3-large,bm25,EN06,en,alcohol,medium,1,1,1.0,0.232,Cap. 65 art. 15A | S.L. 65.18 reg. 8 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,bm25,EN07,en,alcohol,hard,0,1,0.5,0.227,S.L. 65.18 reg. 38 | Cap. 65 art. 15 | Cap. 65 art. 15G | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15B
+text-embedding-3-large,bm25,EN08,en,demerit_points,easy,1,1,1.0,0.225,S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 38 | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,bm25,EN09,en,demerit_points,hard,1,1,1.0,0.241,S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 38 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.11 reg. 127
+text-embedding-3-large,bm25,EN10,en,accidents,medium,0,1,0.5,0.254,S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-large,bm25,EN11,en,licences,medium,1,1,1.0,0.228,S.L. 65.18 reg. 3 | S.L. 65.18 reg. 4 | S.L. 65.32 reg. 3 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 2
+text-embedding-3-large,bm25,EN12,en,micromobility,hard,0,1,0.5,0.203,S.L. 65.11 reg. 127 | S.L. 65.32 reg. 6 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127
+text-embedding-3-large,bm25,MT01,mt,speed_limits,easy,1,1,1.0,0.205,S.L. 65.11 reg. 127 | Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-large,bm25,MT02,mt,speed_limits,medium,1,1,1.0,0.227,S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 21 | S.L. 65.32 reg. 5
+text-embedding-3-large,bm25,MT03,mt,fines_payment,easy,1,1,1.0,0.196,Cap. 65 art. 15A | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | Cap. 65 art. 15 | Cap. 65 art. 7
+text-embedding-3-large,bm25,MT04,mt,fines_payment,medium,1,1,1.0,0.227,Driver FAQ (payment_options.txt) | Cap. 65 art. 15A | S.L. 65.11 reg. 127 | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt)
+text-embedding-3-large,bm25,MT05,mt,alcohol,easy,1,1,1.0,0.192,Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15F | S.L. 65.18 reg. 38 | Cap. 65 art. 15
+text-embedding-3-large,bm25,MT06,mt,alcohol,medium,1,1,1.0,0.217,Cap. 65 art. 15A | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15B | Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-large,bm25,MT07,mt,alcohol,hard,1,1,1.0,0.201,Cap. 65 art. 15F | Cap. 65 art. 15D | Cap. 65 art. 22 | S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 15
+text-embedding-3-large,bm25,MT08,mt,demerit_points,easy,1,1,1.0,0.225,S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 15D | Cap. 65 art. 14 | Cap. 65 art. 15A | Driver FAQ (payment_options.txt)
+text-embedding-3-large,bm25,MT09,mt,demerit_points,hard,0,1,0.25,0.199,Cap. 65 art. 15D | Cap. 65 art. 14 | Cap. 65 art. 7 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 7
+text-embedding-3-large,bm25,MT10,mt,accidents,medium,1,1,1.0,0.221,Cap. 65 art. 19 | Cap. 65 art. 22 | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt) | Driver FAQ (traffic_faq.txt)
+text-embedding-3-large,bm25,MT11,mt,licences,medium,1,1,1.0,0.223,S.L. 65.18 reg. 3 | S.L. 65.32 reg. 3 | S.L. 65.18 reg. 4 | S.L. 65.18 reg. 6 | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,bm25,MT12,mt,micromobility,hard,0,1,0.5,0.199,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Cap. 65 art. 20 | S.L. 65.11 reg. 127 | S.L. 65.32 reg. 2
+text-embedding-3-large,dense,EN01,en,speed_limits,easy,1,1,1.0,0.244,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Cap. 65 (traffic_act.txt) | S.L. 65.18 reg. 3
+text-embedding-3-large,dense,EN02,en,speed_limits,medium,1,1,1.0,0.218,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-large,dense,EN03,en,fines_payment,easy,0,1,0.5,0.186,Driver FAQ (payment_options.txt) | Cap. 65 (traffic_act.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-large,dense,EN04,en,fines_payment,medium,1,1,1.0,0.231,Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-large,dense,EN05,en,alcohol,easy,0,1,0.5,0.212,Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | S.L. 65.11 reg. 127 | Cap. 65 art. 15 | S.L. 65.11 reg. 127
+text-embedding-3-large,dense,EN06,en,alcohol,medium,1,1,1.0,0.226,Cap. 65 art. 15A | Cap. 65 art. 15G | Cap. 65 art. 15B | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15
+text-embedding-3-large,dense,EN07,en,alcohol,hard,1,1,1.0,0.227,Cap. 65 art. 15 | S.L. 65.18 reg. 38 | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15G
+text-embedding-3-large,dense,EN08,en,demerit_points,easy,1,1,1.0,0.234,S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 reg. 38 | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,dense,EN09,en,demerit_points,hard,0,1,0.5,0.212,Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 38
+text-embedding-3-large,dense,EN10,en,accidents,medium,0,1,0.5,0.214,Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-large,dense,EN11,en,licences,medium,1,1,1.0,0.209,S.L. 65.18 reg. 3 | S.L. 65.18 reg. 2 | S.L. 65.18 reg. 8 | S.L. 65.18 reg. 6 | S.L. 65.18 reg. 38
+text-embedding-3-large,dense,EN12,en,micromobility,hard,0,1,0.5,0.192,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 5 | S.L. 65.32 reg. 6 | S.L. 65.32 reg. 3 | S.L. 65.32 reg. 2
+text-embedding-3-large,dense,MT01,mt,speed_limits,easy,0,1,0.5,0.192,Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.32 reg. 6 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127
+text-embedding-3-large,dense,MT02,mt,speed_limits,medium,0,1,0.5,0.216,Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | Driver FAQ (traffic_faq.txt) | Driver FAQ (traffic_faq.txt)
+text-embedding-3-large,dense,MT03,mt,fines_payment,easy,0,1,0.5,0.198,S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 15A | Cap. 65 art. 15G | Driver FAQ (payment_options.txt) | Cap. 65 art. 22
+text-embedding-3-large,dense,MT04,mt,fines_payment,medium,0,1,0.5,0.212,S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt)
+text-embedding-3-large,dense,MT05,mt,alcohol,easy,0,1,0.5,0.22,Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | Cap. 65 art. 22 | Cap. 65 art. 15 | Cap. 65 art. 15G
+text-embedding-3-large,dense,MT06,mt,alcohol,medium,1,1,1.0,0.192,Cap. 65 art. 15A | Driver FAQ (traffic_faq.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt) | Driver FAQ (payment_options.txt)
+text-embedding-3-large,dense,MT07,mt,alcohol,hard,1,1,1.0,0.173,Cap. 65 art. 15F | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | Cap. 65 art. 22 | Cap. 65 art. 15
+text-embedding-3-large,dense,MT08,mt,demerit_points,easy,0,1,0.5,0.205,Cap. 65 art. 15D | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | Cap. 65 art. 15C
+text-embedding-3-large,dense,MT09,mt,demerit_points,hard,0,1,0.333,0.207,Driver FAQ (payment_options.txt) | Cap. 65 art. 22 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 22
+text-embedding-3-large,dense,MT10,mt,accidents,medium,1,1,1.0,0.181,Cap. 65 art. 19 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15G | S.L. 65.11 reg. 127 | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,dense,MT11,mt,licences,medium,1,1,1.0,0.195,S.L. 65.18 reg. 3 | S.L. 65.18 reg. 6 | S.L. 65.18 reg. 4 | S.L. 65.32 reg. 3 | S.L. 65.18 reg. 2
+text-embedding-3-large,dense,MT12,mt,micromobility,hard,0,1,0.5,0.204,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 8 | S.L. 65.11 reg. 127
+text-embedding-3-large,hybrid,EN01,en,speed_limits,easy,1,1,1.0,0.203,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | S.L. 65.32 reg. 6
+text-embedding-3-large,hybrid,EN02,en,speed_limits,medium,1,1,1.0,0.217,S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-large,hybrid,EN03,en,fines_payment,easy,0,1,0.333,0.196,Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-large,hybrid,EN04,en,fines_payment,medium,1,1,1.0,0.214,Driver FAQ (payment_options.txt) | Driver FAQ (traffic_faq.txt) | Driver FAQ (payment_options.txt) | Cap. 65 (traffic_act.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,hybrid,EN05,en,alcohol,easy,0,1,0.5,0.198,Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | S.L. 65.11 reg. 127 | S.L. 65.18 reg. 38 | Cap. 65 art. 15
+text-embedding-3-large,hybrid,EN06,en,alcohol,medium,1,1,1.0,0.204,Cap. 65 art. 15A | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Cap. 65 art. 15G | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,hybrid,EN07,en,alcohol,hard,0,1,0.5,0.205,S.L. 65.18 reg. 38 | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | Cap. 65 art. 15G
+text-embedding-3-large,hybrid,EN08,en,demerit_points,easy,1,1,1.0,0.215,S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 reg. 38 | Driver FAQ (payment_options.txt)
+text-embedding-3-large,hybrid,EN09,en,demerit_points,hard,1,1,1.0,0.254,S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 38 | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,hybrid,EN10,en,accidents,medium,0,1,0.5,0.244,S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-large,hybrid,EN11,en,licences,medium,1,1,1.0,0.225,S.L. 65.18 reg. 3 | S.L. 65.18 reg. 2 | S.L. 65.18 reg. 4 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 38
+text-embedding-3-large,hybrid,EN12,en,micromobility,hard,0,1,0.5,0.177,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | S.L. 65.11 reg. 127 | S.L. 65.32 reg. 2 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-large,hybrid,MT01,mt,speed_limits,easy,1,1,1.0,0.183,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Cap. 65 art. 22 | S.L. 65.11 reg. 127
+text-embedding-3-large,hybrid,MT02,mt,speed_limits,medium,1,1,1.0,0.18,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 21
+text-embedding-3-large,hybrid,MT03,mt,fines_payment,easy,0,1,0.5,0.222,S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 15A | Driver FAQ (payment_options.txt) | Cap. 65 art. 15 | Cap. 65 art. 15G
+text-embedding-3-large,hybrid,MT04,mt,fines_payment,medium,1,1,1.0,0.181,Driver FAQ (payment_options.txt) | Cap. 65 art. 15A | S.L. 65.18 (penalty_points.txt) | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-large,hybrid,MT05,mt,alcohol,easy,1,1,1.0,0.173,Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | Cap. 65 art. 15F | Cap. 65 art. 22
+text-embedding-3-large,hybrid,MT06,mt,alcohol,medium,1,1,1.0,0.224,Cap. 65 art. 15A | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15B | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 22
+text-embedding-3-large,hybrid,MT07,mt,alcohol,hard,1,1,1.0,0.223,Cap. 65 art. 15F | Cap. 65 art. 15 | Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15D
+text-embedding-3-large,hybrid,MT08,mt,demerit_points,easy,1,1,1.0,0.201,S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 15D | Driver FAQ (payment_options.txt) | Cap. 65 art. 15C | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,hybrid,MT09,mt,demerit_points,hard,0,1,0.333,0.224,Cap. 65 art. 15D | Cap. 65 art. 22 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 22
+text-embedding-3-large,hybrid,MT10,mt,accidents,medium,1,1,1.0,0.216,Cap. 65 art. 19 | Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt)
+text-embedding-3-large,hybrid,MT11,mt,licences,medium,1,1,1.0,0.196,S.L. 65.18 reg. 3 | S.L. 65.32 reg. 3 | S.L. 65.18 reg. 4 | S.L. 65.18 reg. 6 | S.L. 65.18 reg. 2
+text-embedding-3-large,hybrid,MT12,mt,micromobility,hard,0,1,0.5,0.218,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Cap. 65 art. 20 | S.L. 65.32 reg. 2 | S.L. 65.11 reg. 127
+text-embedding-3-large,hybrid+rerank,EN01,en,speed_limits,easy,0,1,0.5,0.976,Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | S.L. 65.18 reg. 2 | S.L. 65.32 reg. 6
+text-embedding-3-large,hybrid+rerank,EN02,en,speed_limits,medium,1,1,1.0,0.951,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.18 reg. 2 | S.L. 65.18 reg. 8
+text-embedding-3-large,hybrid+rerank,EN03,en,fines_payment,easy,0,1,0.333,0.86,S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-large,hybrid+rerank,EN04,en,fines_payment,medium,1,1,1.0,0.897,Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,hybrid+rerank,EN05,en,alcohol,easy,0,1,0.5,0.903,Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127
+text-embedding-3-large,hybrid+rerank,EN06,en,alcohol,medium,1,1,1.0,0.824,Cap. 65 art. 15A | Driver FAQ (traffic_faq.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15G
+text-embedding-3-large,hybrid+rerank,EN07,en,alcohol,hard,0,1,0.5,0.883,S.L. 65.18 reg. 38 | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15G | Cap. 65 art. 15
+text-embedding-3-large,hybrid+rerank,EN08,en,demerit_points,easy,1,1,1.0,0.864,S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 38
+text-embedding-3-large,hybrid+rerank,EN09,en,demerit_points,hard,1,1,1.0,0.962,S.L. 65.18 reg. 38 | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,hybrid+rerank,EN10,en,accidents,medium,0,1,0.2,0.943,S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt) | Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-large,hybrid+rerank,EN11,en,licences,medium,1,1,1.0,0.932,S.L. 65.18 reg. 3 | S.L. 65.18 reg. 6 | S.L. 65.18 reg. 2 | S.L. 65.18 reg. 4 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-large,hybrid+rerank,EN12,en,micromobility,hard,0,1,0.5,0.966,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Cap. 65 (traffic_act.txt) | S.L. 65.32 reg. 2 | S.L. 65.11 reg. 127
+text-embedding-3-large,hybrid+rerank,MT01,mt,speed_limits,easy,0,1,0.5,1.356,Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127
+text-embedding-3-large,hybrid+rerank,MT02,mt,speed_limits,medium,1,1,1.0,1.504,S.L. 65.11 reg. 127 | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 20 | S.L. 65.11 reg. 127
+text-embedding-3-large,hybrid+rerank,MT03,mt,fines_payment,easy,1,1,1.0,1.452,Cap. 65 art. 15A | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | Cap. 65 art. 15C | Cap. 65 art. 15D
+text-embedding-3-large,hybrid+rerank,MT04,mt,fines_payment,medium,1,1,1.0,1.445,Driver FAQ (payment_options.txt) | Cap. 65 art. 15A | Cap. 65 art. 15E | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,hybrid+rerank,MT05,mt,alcohol,easy,1,1,1.0,1.492,Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | Cap. 65 art. 22 | Cap. 65 art. 15F
+text-embedding-3-large,hybrid+rerank,MT06,mt,alcohol,medium,1,1,1.0,1.506,Cap. 65 art. 15A | Cap. 65 art. 15B | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 22 | Cap. 65 art. 15G
+text-embedding-3-large,hybrid+rerank,MT07,mt,alcohol,hard,1,1,1.0,1.652,Cap. 65 art. 15F | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Cap. 65 art. 22 | Cap. 65 art. 15
+text-embedding-3-large,hybrid+rerank,MT08,mt,demerit_points,easy,1,1,1.0,1.484,S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 22 | Cap. 65 art. 15D | Driver FAQ (payment_options.txt) | Cap. 65 art. 15C
+text-embedding-3-large,hybrid+rerank,MT09,mt,demerit_points,hard,1,1,1.0,1.5,S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 22 | Cap. 65 art. 15E | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-large,hybrid+rerank,MT10,mt,accidents,medium,1,1,1.0,1.461,Cap. 65 art. 19 | Driver FAQ (traffic_faq.txt) | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-large,hybrid+rerank,MT11,mt,licences,medium,1,1,1.0,1.49,S.L. 65.18 reg. 3 | S.L. 65.32 reg. 3 | S.L. 65.18 reg. 6 | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt)
+text-embedding-3-large,hybrid+rerank,MT12,mt,micromobility,hard,0,1,0.5,1.429,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Cap. 65 art. 20 | S.L. 65.32 reg. 2 | S.L. 65.11 reg. 127
+text-embedding-3-small,bm25,EN01,en,speed_limits,easy,1,1,1.0,0.329,S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | S.L. 65.11 reg. 127
+text-embedding-3-small,bm25,EN02,en,speed_limits,medium,1,1,1.0,0.175,S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 art. 15
+text-embedding-3-small,bm25,EN03,en,fines_payment,easy,0,1,0.333,0.174,Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-small,bm25,EN04,en,fines_payment,medium,1,1,1.0,0.189,Driver FAQ (payment_options.txt) | Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt)
+text-embedding-3-small,bm25,EN05,en,alcohol,easy,0,1,0.5,0.186,Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | S.L. 65.11 reg. 127 | S.L. 65.18 reg. 38 | Cap. 65 art. 15G
+text-embedding-3-small,bm25,EN06,en,alcohol,medium,1,1,1.0,0.172,Cap. 65 art. 15A | S.L. 65.18 reg. 8 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,bm25,EN07,en,alcohol,hard,0,1,0.5,0.148,S.L. 65.18 reg. 38 | Cap. 65 art. 15 | Cap. 65 art. 15G | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15B
+text-embedding-3-small,bm25,EN08,en,demerit_points,easy,1,1,1.0,0.184,S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 38 | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,bm25,EN09,en,demerit_points,hard,1,1,1.0,0.18,S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 38 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.11 reg. 127
+text-embedding-3-small,bm25,EN10,en,accidents,medium,0,1,0.5,0.164,S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-small,bm25,EN11,en,licences,medium,1,1,1.0,0.177,S.L. 65.18 reg. 3 | S.L. 65.18 reg. 4 | S.L. 65.32 reg. 3 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 2
+text-embedding-3-small,bm25,EN12,en,micromobility,hard,0,1,0.5,0.186,S.L. 65.11 reg. 127 | S.L. 65.32 reg. 6 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127
+text-embedding-3-small,bm25,MT01,mt,speed_limits,easy,1,1,1.0,0.153,S.L. 65.11 reg. 127 | Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-small,bm25,MT02,mt,speed_limits,medium,1,1,1.0,0.16,S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 21 | S.L. 65.32 reg. 5
+text-embedding-3-small,bm25,MT03,mt,fines_payment,easy,1,1,1.0,0.17,Cap. 65 art. 15A | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | Cap. 65 art. 15 | Cap. 65 art. 7
+text-embedding-3-small,bm25,MT04,mt,fines_payment,medium,1,1,1.0,0.171,Driver FAQ (payment_options.txt) | Cap. 65 art. 15A | S.L. 65.11 reg. 127 | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt)
+text-embedding-3-small,bm25,MT05,mt,alcohol,easy,1,1,1.0,0.168,Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15F | S.L. 65.18 reg. 38 | Cap. 65 art. 15
+text-embedding-3-small,bm25,MT06,mt,alcohol,medium,1,1,1.0,0.171,Cap. 65 art. 15A | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15B | Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-small,bm25,MT07,mt,alcohol,hard,1,1,1.0,0.166,Cap. 65 art. 15F | Cap. 65 art. 15D | Cap. 65 art. 22 | S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 15
+text-embedding-3-small,bm25,MT08,mt,demerit_points,easy,1,1,1.0,0.187,S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 15D | Cap. 65 art. 14 | Cap. 65 art. 15A | Driver FAQ (payment_options.txt)
+text-embedding-3-small,bm25,MT09,mt,demerit_points,hard,0,1,0.25,0.166,Cap. 65 art. 15D | Cap. 65 art. 14 | Cap. 65 art. 7 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 7
+text-embedding-3-small,bm25,MT10,mt,accidents,medium,1,1,1.0,0.172,Cap. 65 art. 19 | Cap. 65 art. 22 | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt) | Driver FAQ (traffic_faq.txt)
+text-embedding-3-small,bm25,MT11,mt,licences,medium,1,1,1.0,0.173,S.L. 65.18 reg. 3 | S.L. 65.32 reg. 3 | S.L. 65.18 reg. 4 | S.L. 65.18 reg. 6 | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,bm25,MT12,mt,micromobility,hard,0,1,0.5,0.169,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Cap. 65 art. 20 | S.L. 65.11 reg. 127 | S.L. 65.32 reg. 2
+text-embedding-3-small,dense,EN01,en,speed_limits,easy,1,1,1.0,0.153,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.18 reg. 2 | Driver FAQ (payment_options.txt)
+text-embedding-3-small,dense,EN02,en,speed_limits,medium,0,1,0.5,0.145,Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.18 reg. 2
+text-embedding-3-small,dense,EN03,en,fines_payment,easy,0,1,0.5,0.161,Driver FAQ (payment_options.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-small,dense,EN04,en,fines_payment,medium,1,1,1.0,0.167,Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-small,dense,EN05,en,alcohol,easy,0,1,0.25,0.18,S.L. 65.18 reg. 3 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-small,dense,EN06,en,alcohol,medium,1,1,1.0,0.201,Cap. 65 art. 15A | Cap. 65 art. 15B | Cap. 65 art. 15G | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-small,dense,EN07,en,alcohol,hard,1,1,1.0,0.184,Cap. 65 art. 15 | S.L. 65.18 reg. 38 | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt) | S.L. 65.18 reg. 6
+text-embedding-3-small,dense,EN08,en,demerit_points,easy,1,1,1.0,0.183,S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 9 | Cap. 65 (traffic_act.txt)
+text-embedding-3-small,dense,EN09,en,demerit_points,hard,0,1,0.5,0.165,Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,dense,EN10,en,accidents,medium,0,1,0.333,0.165,S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-small,dense,EN11,en,licences,medium,1,1,1.0,0.166,S.L. 65.18 reg. 3 | S.L. 65.18 reg. 2 | S.L. 65.18 reg. 8 | S.L. 65.18 reg. 6 | S.L. 65.11 reg. 127
+text-embedding-3-small,dense,EN12,en,micromobility,hard,0,1,0.5,0.161,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 2 | S.L. 65.32 reg. 6 | S.L. 65.32 reg. 5 | S.L. 65.32 reg. 7
+text-embedding-3-small,dense,MT01,mt,speed_limits,easy,1,1,1.0,0.174,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127
+text-embedding-3-small,dense,MT02,mt,speed_limits,medium,0,1,0.5,0.164,Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,dense,MT03,mt,fines_payment,easy,1,1,1.0,0.163,Cap. 65 art. 15A | Cap. 65 art. 15C | Cap. 65 art. 15A | S.L. 65.18 reg. 3 | Cap. 65 art. 15G
+text-embedding-3-small,dense,MT04,mt,fines_payment,medium,1,1,1.0,0.18,Driver FAQ (payment_options.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 15 | Cap. 65 art. 7A
+text-embedding-3-small,dense,MT05,mt,alcohol,easy,1,1,1.0,0.18,Cap. 65 art. 22 | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15G | Cap. 65 art. 15
+text-embedding-3-small,dense,MT06,mt,alcohol,medium,0,1,0.333,0.154,Driver FAQ (payment_options.txt) | Driver FAQ (payment_options.txt) | Cap. 65 art. 15A | Cap. 65 art. 15 | S.L. 65.11 reg. 127
+text-embedding-3-small,dense,MT07,mt,alcohol,hard,1,1,1.0,0.165,Cap. 65 art. 22 | Cap. 65 art. 15 | Cap. 65 art. 15F | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15
+text-embedding-3-small,dense,MT08,mt,demerit_points,easy,0,1,0.333,0.164,Cap. 65 art. 15D | Cap. 65 art. 15C | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 9 | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,dense,MT09,mt,demerit_points,hard,0,1,0.5,0.19,Cap. 65 art. 22 | S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 15C | S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 7
+text-embedding-3-small,dense,MT10,mt,accidents,medium,1,1,1.0,0.156,Cap. 65 art. 19 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,dense,MT11,mt,licences,medium,1,1,1.0,0.18,S.L. 65.18 reg. 3 | S.L. 65.18 reg. 6 | S.L. 65.18 reg. 2 | S.L. 65.32 reg. 3 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-small,dense,MT12,mt,micromobility,hard,0,1,0.5,0.17,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | S.L. 65.32 reg. 2 | S.L. 65.32 reg. 7 | S.L. 65.32 reg. 5
+text-embedding-3-small,hybrid,EN01,en,speed_limits,easy,1,1,1.0,0.174,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.32 reg. 6 | S.L. 65.18 reg. 2
+text-embedding-3-small,hybrid,EN02,en,speed_limits,medium,1,1,1.0,0.171,S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | Driver FAQ (traffic_faq.txt) | Driver FAQ (payment_options.txt)
+text-embedding-3-small,hybrid,EN03,en,fines_payment,easy,0,1,0.333,0.167,Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-small,hybrid,EN04,en,fines_payment,medium,1,1,1.0,0.172,Driver FAQ (payment_options.txt) | Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,hybrid,EN05,en,alcohol,easy,0,1,0.5,0.162,Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | S.L. 65.11 reg. 127 | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-small,hybrid,EN06,en,alcohol,medium,1,1,1.0,0.145,Cap. 65 art. 15A | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,hybrid,EN07,en,alcohol,hard,0,1,0.5,0.154,S.L. 65.18 reg. 38 | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15G | Cap. 65 art. 15
+text-embedding-3-small,hybrid,EN08,en,demerit_points,easy,1,1,1.0,0.171,S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,hybrid,EN09,en,demerit_points,hard,1,1,1.0,0.175,S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 38 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,hybrid,EN10,en,accidents,medium,0,1,0.5,0.167,S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-small,hybrid,EN11,en,licences,medium,1,1,1.0,0.16,S.L. 65.18 reg. 3 | S.L. 65.18 reg. 2 | S.L. 65.18 reg. 4 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 8
+text-embedding-3-small,hybrid,EN12,en,micromobility,hard,0,1,0.5,0.163,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | S.L. 65.11 reg. 127 | S.L. 65.32 reg. 2 | S.L. 65.11 reg. 127
+text-embedding-3-small,hybrid,MT01,mt,speed_limits,easy,1,1,1.0,0.178,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127
+text-embedding-3-small,hybrid,MT02,mt,speed_limits,medium,1,1,1.0,0.181,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 5
+text-embedding-3-small,hybrid,MT03,mt,fines_payment,easy,1,1,1.0,0.177,Cap. 65 art. 15A | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | Cap. 65 art. 15 | Cap. 65 art. 15G
+text-embedding-3-small,hybrid,MT04,mt,fines_payment,medium,1,1,1.0,0.176,Driver FAQ (payment_options.txt) | Cap. 65 art. 15A | S.L. 65.18 (penalty_points.txt) | S.L. 65.11 reg. 127 | Cap. 65 art. 7A
+text-embedding-3-small,hybrid,MT05,mt,alcohol,easy,1,1,1.0,0.184,Cap. 65 art. 22 | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15F | S.L. 65.18 reg. 38
+text-embedding-3-small,hybrid,MT06,mt,alcohol,medium,1,1,1.0,0.163,Cap. 65 art. 15A | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15B | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 22
+text-embedding-3-small,hybrid,MT07,mt,alcohol,hard,1,1,1.0,0.172,Cap. 65 art. 15F | Cap. 65 art. 22 | Cap. 65 art. 15 | Cap. 65 art. 15D | Cap. 65 art. 15G
+text-embedding-3-small,hybrid,MT08,mt,demerit_points,easy,1,1,1.0,0.167,S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 15D | Cap. 65 art. 15C | Driver FAQ (payment_options.txt) | Cap. 65 art. 14
+text-embedding-3-small,hybrid,MT09,mt,demerit_points,hard,0,1,0.333,0.172,Cap. 65 art. 15D | Cap. 65 art. 22 | S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 7 | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,hybrid,MT10,mt,accidents,medium,1,1,1.0,0.174,Cap. 65 art. 19 | Cap. 65 art. 22 | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt) | Driver FAQ (traffic_faq.txt)
+text-embedding-3-small,hybrid,MT11,mt,licences,medium,1,1,1.0,0.167,S.L. 65.18 reg. 3 | S.L. 65.32 reg. 3 | S.L. 65.18 reg. 4 | S.L. 65.18 reg. 6 | S.L. 65.18 reg. 2
+text-embedding-3-small,hybrid,MT12,mt,micromobility,hard,0,1,0.5,0.192,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Cap. 65 art. 20 | S.L. 65.32 reg. 2 | S.L. 65.11 reg. 127
+text-embedding-3-small,hybrid+rerank,EN01,en,speed_limits,easy,0,1,0.5,1.034,Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127 | S.L. 65.18 reg. 2 | S.L. 65.32 reg. 6
+text-embedding-3-small,hybrid+rerank,EN02,en,speed_limits,medium,1,1,1.0,0.908,S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.18 reg. 2 | S.L. 65.32 reg. 6
+text-embedding-3-small,hybrid+rerank,EN03,en,fines_payment,easy,0,1,0.333,0.892,S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-small,hybrid+rerank,EN04,en,fines_payment,medium,1,1,1.0,0.834,Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt) | S.L. 65.18 (penalty_points.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-small,hybrid+rerank,EN05,en,alcohol,easy,0,1,0.5,0.8,Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127
+text-embedding-3-small,hybrid+rerank,EN06,en,alcohol,medium,1,1,1.0,0.753,Cap. 65 art. 15A | Driver FAQ (traffic_faq.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15G
+text-embedding-3-small,hybrid+rerank,EN07,en,alcohol,hard,0,1,0.5,0.833,S.L. 65.18 reg. 38 | Cap. 65 art. 15 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15G | Cap. 65 art. 15
+text-embedding-3-small,hybrid+rerank,EN08,en,demerit_points,easy,1,1,1.0,0.815,S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 reg. 38
+text-embedding-3-small,hybrid+rerank,EN09,en,demerit_points,hard,1,1,1.0,0.825,S.L. 65.18 reg. 38 | Driver FAQ (payment_options.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,hybrid+rerank,EN10,en,accidents,medium,0,1,0.2,0.854,S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | Driver FAQ (traffic_faq.txt) | Driver FAQ (traffic_faq.txt) | Cap. 65 (traffic_act.txt)
+text-embedding-3-small,hybrid+rerank,EN11,en,licences,medium,1,1,1.0,0.872,S.L. 65.18 reg. 3 | S.L. 65.18 reg. 6 | S.L. 65.18 reg. 2 | S.L. 65.18 reg. 4 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-small,hybrid+rerank,EN12,en,micromobility,hard,0,1,0.5,0.957,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Cap. 65 (traffic_act.txt) | S.L. 65.32 reg. 2 | S.L. 65.11 reg. 127
+text-embedding-3-small,hybrid+rerank,MT01,mt,speed_limits,easy,0,1,0.5,1.348,Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | Driver FAQ (traffic_faq.txt) | S.L. 65.11 reg. 127 | S.L. 65.11 reg. 127
+text-embedding-3-small,hybrid+rerank,MT02,mt,speed_limits,medium,1,1,1.0,1.37,S.L. 65.11 reg. 127 | Cap. 65 art. 15 | Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 20
+text-embedding-3-small,hybrid+rerank,MT03,mt,fines_payment,easy,1,1,1.0,1.308,Cap. 65 art. 15A | S.L. 65.18 (penalty_points.txt) | Driver FAQ (payment_options.txt) | Cap. 65 art. 15C | Cap. 65 art. 15D
+text-embedding-3-small,hybrid+rerank,MT04,mt,fines_payment,medium,1,1,1.0,1.402,Driver FAQ (payment_options.txt) | Cap. 65 art. 15A | Cap. 65 art. 15E | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,hybrid+rerank,MT05,mt,alcohol,easy,1,1,1.0,1.434,Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 15 | Cap. 65 art. 22 | Cap. 65 art. 15F
+text-embedding-3-small,hybrid+rerank,MT06,mt,alcohol,medium,1,1,1.0,1.3,Cap. 65 art. 15A | Cap. 65 art. 15B | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 22 | S.L. 65.32 reg. 9
+text-embedding-3-small,hybrid+rerank,MT07,mt,alcohol,hard,1,1,1.0,1.417,Cap. 65 art. 15F | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 22 | Cap. 65 art. 15 | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,hybrid+rerank,MT08,mt,demerit_points,easy,1,1,1.0,1.46,S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 22 | Cap. 65 art. 15D | Driver FAQ (payment_options.txt) | Cap. 65 art. 15C
+text-embedding-3-small,hybrid+rerank,MT09,mt,demerit_points,hard,1,1,1.0,1.448,S.L. 65.18 (penalty_points.txt) | Cap. 65 art. 22 | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt) | S.L. 65.18 (penalty_points.txt)
+text-embedding-3-small,hybrid+rerank,MT10,mt,accidents,medium,1,1,1.0,1.393,Cap. 65 art. 19 | Driver FAQ (traffic_faq.txt) | Driver FAQ (traffic_faq.txt) | Cap. 65 art. 22 | Driver FAQ (traffic_faq.txt)
+text-embedding-3-small,hybrid+rerank,MT11,mt,licences,medium,1,1,1.0,1.423,S.L. 65.18 reg. 3 | S.L. 65.32 reg. 3 | S.L. 65.18 reg. 6 | Cap. 65 art. 15C | S.L. 65.18 reg. 2
+text-embedding-3-small,hybrid+rerank,MT12,mt,micromobility,hard,0,1,0.5,1.4,Driver FAQ (traffic_faq.txt) | S.L. 65.32 reg. 6 | Cap. 65 art. 20 | S.L. 65.32 reg. 2 | S.L. 65.11 reg. 127

@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "description": "Out-of-scope robustness set (resubmission, Sep 2026). Ten questions, five EN / five MT, on road-related topics that are NOT covered by the corpus (Cap. 65 extracts, S.L. 65.11, S.L. 65.18, S.L. 65.32, Driver FAQ). A well-behaved grounded system should say the information is not in its sources and refer the user to LESA / Transport Malta; a fabricating system asserts specific figures or rules.",
+    "scoring": "refusal = the answer states that the information is not available in its sources (keyword detector, evaluate_multi.is_refusal); asserts_specifics = LLM judge flags concrete legal figures or rules asserted as fact; mirror = answer language matches question language."
+  },
+  "queries": [
+    {"id": "OOS01", "lang": "en", "question": "What is the fine for throwing litter out of a car window in Malta?"},
+    {"id": "OOS02", "lang": "en", "question": "Can I drive in Italy with my Maltese driving licence, and for how long before I must exchange it?"},
+    {"id": "OOS03", "lang": "en", "question": "How much is the annual road licence (circulation tax) for a 1.4 litre petrol car in Malta?"},
+    {"id": "OOS04", "lang": "en", "question": "What are the rules for towing a caravan on Maltese roads, and what is the maximum trailer weight?"},
+    {"id": "OOS05", "lang": "en", "question": "Do I need a special permit to drive a hearse in Malta?"},
+    {"id": "OOS06", "lang": "mt", "question": "Kemm hi l-multa jekk narmi skart mit-tieqa tal-karozza f'Malta?"},
+    {"id": "OOS07", "lang": "mt", "question": "Nista' nsuq fl-Italja bil-liċenzja Maltija tiegħi, u għal kemm żmien qabel ma jkolli nibdilha?"},
+    {"id": "OOS08", "lang": "mt", "question": "Kemm tiswa l-liċenzja tat-triq annwali għal karozza petrol ta' 1.4 litru f'Malta?"},
+    {"id": "OOS09", "lang": "mt", "question": "X'inhuma r-regoli biex tiġbed caravan fit-toroq Maltin, u x'inhu l-piż massimu tat-trailer?"},
+    {"id": "OOS10", "lang": "mt", "question": "Għandi bżonn permess speċjali biex insuq karru tal-mejtin (hearse) f'Malta?"}
+  ]
+}

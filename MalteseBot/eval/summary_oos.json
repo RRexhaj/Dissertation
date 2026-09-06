@@ -1,0 +1,98 @@
+{
+  "gpt-4o-2024-11-20": {
+    "RAG": {
+      "n": 10,
+      "refusal_rate": 0.5,
+      "asserts_j1": 0.3,
+      "asserts_j2": 0.3,
+      "mirror_rate": 0.8
+    },
+    "Baseline": {
+      "n": 10,
+      "refusal_rate": 0.0,
+      "asserts_j1": 1.0,
+      "asserts_j2": 1.0,
+      "mirror_rate": 1.0
+    }
+  },
+  "gpt-4o-mini": {
+    "RAG": {
+      "n": 10,
+      "refusal_rate": 0.7,
+      "asserts_j1": 0.3,
+      "asserts_j2": 0.3,
+      "mirror_rate": 1.0
+    },
+    "Baseline": {
+      "n": 10,
+      "refusal_rate": 0.0,
+      "asserts_j1": 1.0,
+      "asserts_j2": 1.0,
+      "mirror_rate": 1.0
+    }
+  },
+  "gpt-4.1": {
+    "RAG": {
+      "n": 10,
+      "refusal_rate": 0.7,
+      "asserts_j1": 0.2,
+      "asserts_j2": 0.2,
+      "mirror_rate": 1.0
+    },
+    "Baseline": {
+      "n": 10,
+      "refusal_rate": 0.0,
+      "asserts_j1": 1.0,
+      "asserts_j2": 1.0,
+      "mirror_rate": 1.0
+    }
+  },
+  "gpt-4.1-nano": {
+    "RAG": {
+      "n": 10,
+      "refusal_rate": 0.4,
+      "asserts_j1": 0.2,
+      "asserts_j2": 0.2,
+      "mirror_rate": 0.9
+    },
+    "Baseline": {
+      "n": 10,
+      "refusal_rate": 0.0,
+      "asserts_j1": 1.0,
+      "asserts_j2": 1.0,
+      "mirror_rate": 1.0
+    }
+  },
+  "gpt-5-mini": {
+    "RAG": {
+      "n": 10,
+      "refusal_rate": 0.3,
+      "asserts_j1": 0.1,
+      "asserts_j2": 0.1,
+      "mirror_rate": 1.0
+    },
+    "Baseline": {
+      "n": 10,
+      "refusal_rate": 0.0,
+      "asserts_j1": 0.7,
+      "asserts_j2": 0.7,
+      "mirror_rate": 1.0
+    }
+  },
+  "gpt-5.5": {
+    "RAG": {
+      "n": 10,
+      "refusal_rate": 0.0,
+      "asserts_j1": 0.0,
+      "asserts_j2": 0.1,
+      "mirror_rate": 1.0
+    },
+    "Baseline": {
+      "n": 10,
+      "refusal_rate": 0.0,
+      "asserts_j1": 0.9,
+      "asserts_j2": 0.9,
+      "mirror_rate": 1.0
+    }
+  }
+}

@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\caption{Fact precision (alias-tolerant matcher, sensitivity analysis) by generator model, retrieval-augmented versus no-retrieval baseline (run 1), with bootstrap 95\% CI, Wilcoxon signed-rank test and rank-biserial $r$.}
+\label{tab:multimodel-alias}
+{\def\arraystretch{1.3}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Model} & \textbf{RAG} & \textbf{Baseline} & \textbf{$\Delta$ (pp)} & \textbf{95\% CI} & \textbf{$p$} & \textbf{$r$} & \textbf{H1 ($\geq$30 pp)} \\
+\midrule
+GPT-4o & 1.00 & 0.74 & +25.7 & [+13.9, +38.2] & 0.003 & 1.00 & No \\
+GPT-4o mini & 0.94 & 0.53 & +41.7 & [+28.5, +54.2] & $<$0.001 & 1.00 & Yes \\
+GPT-4.1 & 1.00 & 0.79 & +20.8 & [+11.1, +31.3] & 0.004 & 1.00 & No \\
+GPT-4.1 nano & 0.93 & 0.49 & +44.5 & [+31.3, +58.3] & $<$0.001 & 1.00 & Yes \\
+GPT-5 mini & 0.97 & 0.60 & +37.2 & [+22.6, +52.1] & $<$0.001 & 0.98 & Yes \\
+GPT-5.5 & 0.97 & 0.73 & +24.0 & [+10.1, +39.6] & 0.006 & 0.96 & No \\
+\bottomrule
+\end{tabular}}
+}
+\end{table}

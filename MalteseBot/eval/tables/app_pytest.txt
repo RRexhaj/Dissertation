@@ -1,0 +1,36 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.2, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\rexha\Downloads\dissertation_transfer\MalteseBot\.venv\Scripts\python.exe
+rootdir: C:\Users\rexha\Downloads\dissertation_transfer\MalteseBot
+plugins: anyio-4.13.0
+collecting ... collected 27 items
+tests/test_corpus.py::test_section_detection_citation_and_parent PASSED  [  3%]
+tests/test_corpus.py::test_maltese_section_opener_recognised PASSED      [  7%]
+tests/test_corpus.py::test_unstructured_document_becomes_single_block PASSED [ 11%]
+tests/test_corpus.py::test_long_section_is_split_within_size_limit_and_covers_text PASSED [ 14%]
+tests/test_corpus.py::test_real_corpus_counts_match_dissertation PASSED  [ 18%]
+tests/test_language.py::test_short_english_query PASSED                  [ 22%]
+tests/test_language.py::test_long_english_answer_with_limit_and_this_is_english PASSED [ 25%]
+tests/test_language.py::test_maltese_with_diacritics PASSED              [ 29%]
+tests/test_language.py::test_maltese_without_diacritics_uses_function_words PASSED [ 33%]
+tests/test_language.py::test_maltese_answer PASSED                       [ 37%]
+tests/test_retrieval.py::test_bm25_only_ranks_lexical_match_first PASSED [ 40%]
+tests/test_retrieval.py::test_language_filter_restricts_to_requested_language PASSED [ 44%]
+tests/test_retrieval.py::test_retrieved_chunk_carries_metadata PASSED    [ 48%]
+tests/test_retrieval.py::test_aggregate_confidence_thresholds PASSED     [ 51%]
+tests/test_scoring.py::test_strict_precision_full_match PASSED           [ 55%]
+tests/test_scoring.py::test_strict_precision_is_case_and_space_insensitive PASSED [ 59%]
+tests/test_scoring.py::test_strict_precision_misses_synonyms PASSED      [ 62%]
+tests/test_scoring.py::test_strict_precision_empty_facts PASSED          [ 66%]
+tests/test_scoring.py::test_alias_precision_accepts_equivalent_form PASSED [ 70%]
+tests/test_scoring.py::test_alias_precision_never_below_strict PASSED    [ 74%]
+tests/test_scoring.py::test_alias_precision_partial PASSED               [ 77%]
+tests/test_scoring.py::test_expected_citation_present_and_absent PASSED  [ 81%]
+tests/test_scoring.py::test_invalid_citation_detection PASSED            [ 85%]
+tests/test_scoring.py::test_rouge_l_identity_and_disjoint PASSED         [ 88%]
+tests/test_scoring.py::test_refusal_detected_in_english_and_maltese PASSED [ 92%]
+tests/test_scoring.py::test_disclaimer_alone_is_not_a_refusal PASSED     [ 96%]
+tests/test_scoring.py::test_language_mirroring PASSED                    [100%]
+============================== warnings summary ===============================
+tests/test_retrieval.py::test_bm25_only_ranks_lexical_match_first
+    return EntryPoints(ep for group_eps in eps.values() for ep in group_eps)
+======================== 27 passed, 1 warning in 2.45s ========================

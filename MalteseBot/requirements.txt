@@ -1,0 +1,19 @@
+# Web UI
+streamlit>=1.35
+
+# Core LLM + embeddings
+openai>=1.40
+tiktoken>=0.7
+
+# Retrieval stack
+chromadb>=0.5
+rank-bm25>=0.2.2
+sentence-transformers>=2.7
+
+# Corpus build
+pdfminer.six>=20231228
+requests>=2.31
+
+# Misc
+python-dotenv>=1.0
+numpy>=1.26

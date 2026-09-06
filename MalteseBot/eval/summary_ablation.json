@@ -1,0 +1,186 @@
+{
+  "retrieval": {
+    "text-embedding-3-large": {
+      "bm25": {
+        "n": 24,
+        "hit1": 0.708,
+        "hit5": 1.0,
+        "mrr": 0.837,
+        "latency_s": 0.272,
+        "by_lang": {
+          "en": {
+            "hit5": 1.0,
+            "mrr": 0.778
+          },
+          "mt": {
+            "hit5": 1.0,
+            "mrr": 0.896
+          }
+        }
+      },
+      "dense": {
+        "n": 24,
+        "hit1": 0.458,
+        "hit5": 1.0,
+        "mrr": 0.722,
+        "latency_s": 0.208,
+        "by_lang": {
+          "en": {
+            "hit5": 1.0,
+            "mrr": 0.792
+          },
+          "mt": {
+            "hit5": 1.0,
+            "mrr": 0.653
+          }
+        }
+      },
+      "hybrid": {
+        "n": 24,
+        "hit1": 0.667,
+        "hit5": 1.0,
+        "mrr": 0.819,
+        "latency_s": 0.208,
+        "by_lang": {
+          "en": {
+            "hit5": 1.0,
+            "mrr": 0.778
+          },
+          "mt": {
+            "hit5": 1.0,
+            "mrr": 0.861
+          }
+        }
+      },
+      "hybrid+rerank": {
+        "n": 24,
+        "hit1": 0.667,
+        "hit5": 1.0,
+        "mrr": 0.814,
+        "latency_s": 1.197,
+        "by_lang": {
+          "en": {
+            "hit5": 1.0,
+            "mrr": 0.711
+          },
+          "mt": {
+            "hit5": 1.0,
+            "mrr": 0.917
+          }
+        }
+      }
+    },
+    "text-embedding-3-small": {
+      "bm25": {
+        "n": 24,
+        "hit1": 0.708,
+        "hit5": 1.0,
+        "mrr": 0.837,
+        "latency_s": 0.179,
+        "by_lang": {
+          "en": {
+            "hit5": 1.0,
+            "mrr": 0.778
+          },
+          "mt": {
+            "hit5": 1.0,
+            "mrr": 0.896
+          }
+        }
+      },
+      "dense": {
+        "n": 24,
+        "hit1": 0.542,
+        "hit5": 1.0,
+        "mrr": 0.74,
+        "latency_s": 0.17,
+        "by_lang": {
+          "en": {
+            "hit5": 1.0,
+            "mrr": 0.715
+          },
+          "mt": {
+            "hit5": 1.0,
+            "mrr": 0.764
+          }
+        }
+      },
+      "hybrid": {
+        "n": 24,
+        "hit1": 0.708,
+        "hit5": 1.0,
+        "mrr": 0.84,
+        "latency_s": 0.17,
+        "by_lang": {
+          "en": {
+            "hit5": 1.0,
+            "mrr": 0.778
+          },
+          "mt": {
+            "hit5": 1.0,
+            "mrr": 0.903
+          }
+        }
+      },
+      "hybrid+rerank": {
+        "n": 24,
+        "hit1": 0.667,
+        "hit5": 1.0,
+        "mrr": 0.814,
+        "latency_s": 1.128,
+        "by_lang": {
+          "en": {
+            "hit5": 1.0,
+            "mrr": 0.711
+          },
+          "mt": {
+            "hit5": 1.0,
+            "mrr": 0.917
+          }
+        }
+      }
+    }
+  },
+  "downstream": {
+    "bm25": {
+      "n": 24,
+      "kp_strict": 0.854,
+      "kp_alias": 0.951,
+      "citation_rate": 1.0,
+      "hallucination": 0.042,
+      "omission": 0.083,
+      "mirror_rate": 1.0,
+      "rouge_l": 0.229
+    },
+    "dense": {
+      "n": 24,
+      "kp_strict": 0.924,
+      "kp_alias": 1.0,
+      "citation_rate": 0.958,
+      "hallucination": 0.0,
+      "omission": 0.0,
+      "mirror_rate": 1.0,
+      "rouge_l": 0.233
+    },
+    "hybrid": {
+      "n": 24,
+      "kp_strict": 0.903,
+      "kp_alias": 0.979,
+      "citation_rate": 0.958,
+      "hallucination": 0.0,
+      "omission": 0.083,
+      "mirror_rate": 1.0,
+      "rouge_l": 0.241
+    },
+    "hybrid+rerank": {
+      "n": 24,
+      "kp_strict": 0.924,
+      "kp_alias": 1.0,
+      "citation_rate": 1.0,
+      "hallucination": 0.0,
+      "omission": 0.0,
+      "mirror_rate": 1.0,
+      "rouge_l": 0.244
+    }
+  }
+}

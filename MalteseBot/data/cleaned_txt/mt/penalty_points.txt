@@ -1,0 +1,60 @@
+SISTEMA TAL-PUNTI TAL-PENALI TAT-TRAFFIKU TAT-TOROQ MALTIN
+Sors: Regolamenti dwar il-Liċenzji tas-Sewqan, S.L. 65.18 arts 36A–40, u s-Sitt Skeda
+
+IS-SISTEMA TAL-PUNTI TAL-PENALI — REGOLI EWLENIN
+- Kull sewwieq jibda b'żero punti tal-penali.
+- Il-punti għal kull kontravvenzjoni jiġu imposti mill-Qorti tal-Maġistrati jew mill-Kummissarji għall-Ġustizzja u rreġistrati fid-database tal-Awtorità (S.L. 65.18 art. 36B / 40).
+- Liċenzja sħiħa tiġi revokata jekk id-detentur jiġbor 12-il punt tal-penali jew aktar fi kwalunkwe perjodu ta' 12-il xahar (S.L. 65.18 art. 36C).
+- L-istess limitu ta' 12-il punt japplika għal detenturi ta' liċenzja probatorja (sewwieqa ġodda) (S.L. 65.18 art. 40(3)). Is-sewwieqa ġodda jżommu liċenzja probatorja għal perjodu ta' tliet snin (S.L. 65.18 art. 38). M'hemm l-ebda limitu aktar baxx ta' 6 punti għas-sewwieqa ġodda.
+- Wara l-ewwel revoka, is-sewwieq jista' jikseb liċenzja ġdida wara xahrejn mingħajr ma jerġa' jagħmel it-test tas-sewqan (S.L. 65.18 art. 36E(a)).
+- Revoki ripetuti jġorru konsegwenzi progressivament itwal, sa li wieħed jerġa' jagħmel it-test.
+- Detentur b'11-il punt jew inqas jista' jnaqqas il-punti b'50% billi jgħaddi minn test ta' għarfien tas-sigurtà, mhux aktar minn darba kull sentejn (S.L. 65.18 art. 36D).
+
+SKEDA INDIKATTIVA TAR-REATI U L-PUNTI TAL-PENALI (S.L. 65.18, is-Sitt Skeda)
+
+Reati tal-veloċità:
+- Teċċedi l-limitu b'1-10 km/s: 1 punt tad-demerit
+- Teċċedi l-limitu b'11-20 km/s: 2 punti tad-demerit
+- Teċċedi l-limitu b'21-30 km/s: 3 punti tad-demerit
+- Teċċedi l-limitu b'31-40 km/s: 4 punti tad-demerit
+- Teċċedi l-limitu b'aktar minn 40 km/s: 5 punti tad-demerit
+
+Reati tal-mowbajl u d-distrazzjoni:
+- Tuża mowbajl f'idejk waqt is-sewqan: 3 punti tad-demerit
+- Taqra jew tibgħat messaġġ waqt is-sewqan: 3 punti tad-demerit
+
+Reati taċ-ċinturini tas-sigurtà:
+- Nuqqas li tilbes ċinturin tas-sigurtà (sewwieq): 3 punti tad-demerit
+- Nuqqas li tiżgura li passiġġier tat-tfal ikun imwaħħal: 3 punti tad-demerit
+
+Reati tal-alkoħol u d-droga:
+- Sewqan li jaqbeż il-limitu preskritt tal-alkoħol: punti tal-penali flimkien ma' skwalifika
+- Tirrifjuta test tan-nifs meta mitlub mill-pulizija: punti ekwivalenti għall-qbiż tal-limitu
+- Sewqan taħt l-influwenza tad-droga: punti tal-penali flimkien ma' skwalifika
+
+Reati tat-traffiku u s-sinjali:
+- Nuqqas li tieqaf għal sinjal ta' traffiku aħmar: 4 punti tad-demerit
+- Nuqqas li tagħti preċedenza kif meħtieġ minn sinjal Give Way: 2 punti tad-demerit
+- Nuqqas li tieqaf għal sinjal Stop: 3 punti tad-demerit
+
+Reati tal-overtake:
+- Overtake perikoluż: 4 punti tad-demerit
+- Overtake fuq linja solida bajda: 3 punti tad-demerit
+
+Reati tal-parkeġġ:
+- Parkeġġ fuq passaġġ pedonali jew fi 10 metri qablu: 2 punti tad-demerit
+- Parkeġġ fuq linja doppja safra jew clearway: 1 punt tad-demerit
+- Parkeġġ f'post riżervat għal persuni b'diżabbiltà mingħajr permess validu: 3 punti tad-demerit
+
+Reati serji oħra:
+- Nuqqas li tieqaf wara inċident tat-triq (hit and run): 5 punti tad-demerit
+- Sewqan mingħajr liċenzja valida: 5 punti tad-demerit
+- Sewqan mingħajr assigurazzjoni valida tal-vettura: 5 punti tad-demerit
+- Sewqan rikless jew perikoluż: 5 punti tad-demerit
+- Tiġri fuq triq pubblika: 5 punti tad-demerit
+
+STRUTTURA TAL-MULTI GĦALL-KONTRAVVENZJONIJIET (Kap. 65 art. 62 — proċedura speċjali)
+- Il-kontravvenzjonijiet iġorru penali fiżżi ddikjarati fuq l-avviż.
+- Jekk ma titħallasx fi 15-il jum: il-multa tirdoppja.
+- Jekk ma titħallasx fi 30 jum: il-multa tittripla.
+- In-nuqqas ta' ħlas iwassal għal rinviju lill-Kummissarju għall-Ġustizzja u eventwaliment proċedimenti legali.

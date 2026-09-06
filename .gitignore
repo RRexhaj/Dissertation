@@ -1,6 +1,22 @@
 __pycache__/
 *.pyc
-# Participant data — durable store is the Google Sheet; never commit raw responses
-results/
-# Secrets (webhook URL etc.) live in Streamlit Cloud Secrets, never in the repo
+.venv/
+.env
 .streamlit/secrets.toml
+chroma_db/
+chroma_ablation/
+logs/
+.pytest_cache/
+*.log
+# June 2026 scratch files kept locally, not part of the artefact
+build_*.py
+convert_to_latex.py
+validate_latex.py
+diagnose.py
+doc_dump.txt
+ch1_candidate.txt
+verify42.txt
+placeholders.txt
+analysis_summary.json
+analysis_summary_PRIMARY.json
+/fig_*.png
