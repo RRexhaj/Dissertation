@@ -44,7 +44,7 @@ def main() -> int:
     lines = ["\\begin{table}[H]", "\\centering",
              "\\caption{The 24-item gold-standard question set: identifier, language, topic, difficulty and question. "
              "Reference answers, key facts and expected citations are given in full in Appendix~B.}",
-             "\\label{tab:gold-questions}", "{\\footnotesize", "\\def\\arraystretch{1.15}",
+             "\\label{tab:gold-questions}", "{\\footnotesize\\setstretch{1.0}", "\\def\\arraystretch{1.15}",
              "\\begin{tabularx}{\\textwidth}{@{}l l l l >{\\raggedright\\arraybackslash}X@{}}", "\\toprule",
              "\\textbf{ID} & \\textbf{Lang.} & \\textbf{Topic} & \\textbf{Difficulty} & \\textbf{Question} \\\\", "\\midrule"]
     for q in gold:
@@ -72,7 +72,7 @@ def main() -> int:
     oos = json.loads((EVAL_DIR / "oos_queries.json").read_text(encoding="utf-8"))["queries"]
     lines = ["\\begin{table}[H]", "\\centering",
              "\\caption{The out-of-scope robustness set: ten road-related questions on topics not covered by the corpus.}",
-             "\\label{tab:oos-questions}", "{\\footnotesize", "\\def\\arraystretch{1.15}",
+             "\\label{tab:oos-questions}", "{\\footnotesize\\setstretch{1.0}", "\\def\\arraystretch{1.15}",
              "\\begin{tabularx}{\\textwidth}{@{}l l >{\\raggedright\\arraybackslash}X@{}}", "\\toprule",
              "\\textbf{ID} & \\textbf{Lang.} & \\textbf{Question} \\\\", "\\midrule"]
     for q in oos:

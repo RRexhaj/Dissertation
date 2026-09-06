@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\caption{Downstream answer quality when each retrieval configuration (large embedder) supplies the context for a GPT-4o answer to the 24 gold questions: fact precision under both matchers, citation validity, incorrect-claim and omission rates (judge 1), and the Holm-corrected Wilcoxon $p$ of each configuration against the deployed one on alias precision (Friedman $\chi^2$(3) = 4.71, $p$ = 0.19).}
+\label{tab:ablation-downstream}
+{\footnotesize\setstretch{1.0}\setlength{\tabcolsep}{4pt}\def\arraystretch{1.2}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Configuration} & \textbf{Strict} & \textbf{Alias} & \textbf{Cited} & \textbf{Halluc.} & \textbf{Omission} & \textbf{$p$ vs deployed} \\
+\midrule
+BM25 only & 0.85 & 0.95 & 100\% & 4.2\% & 8.3\% & 0.539 \\
+Dense only & 0.92 & 1.00 & 96\% & 0.0\% & 0.0\% & 1.000 \\
+Hybrid (0.6/0.4) & 0.90 & 0.98 & 96\% & 0.0\% & 8.3\% & 0.635 \\
+Hybrid + rerank (deployed) & 0.92 & 1.00 & 100\% & 0.0\% & 0.0\% & -- \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

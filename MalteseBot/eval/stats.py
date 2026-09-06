@@ -207,7 +207,7 @@ def tex_table(name: str, caption: str, tlabel: str, colspec: str, header: list[s
               rows: list[list[str]], wide: bool = False, note: str | None = None) -> None:
     TABLES.mkdir(exist_ok=True)
     lines = ["\\begin{table}[H]", "\\centering", f"\\caption{{{caption}}}", f"\\label{{{tlabel}}}",
-             "{\\def\\arraystretch{1.3}"]
+             "{\\footnotesize\\setstretch{1.0}\\setlength{\\tabcolsep}{4pt}\\def\\arraystretch{1.2}"]
     if wide:
         lines.append("\\resizebox{\\textwidth}{!}{%")
     lines += [f"\\begin{{tabular}}{{{colspec}}}", "\\toprule",
@@ -600,8 +600,8 @@ def write_tables(S: dict, d: Data) -> None:
             h1 = "Yes" if e["h1_point_met"] else "No"
             rows.append([label(m), dec(e["rag"]), dec(e["base"]), pp(e["diff"]), ci_pp(e["ci_lo"], e["ci_hi"]),
                          p_str(e["p"]), dec(e["r_rb"]), h1])
-        tex_table(name, cap, f"tab:{name.replace('tab_', '').replace('_', '-')}", "lcccccccc" [:8],
-                  ["Model", "RAG", "Baseline", "$\\Delta$ (pp)", "95\\% CI", "$p$", "$r$", "H1 ($\\geq$30 pp)"], rows, wide=True)
+        tex_table(name, cap, f"tab:{name.replace('tab_', '').replace('_', '-')}", "lccccccc",
+                  ["Model", "RAG", "Baseline", "$\\Delta$ (pp)", "95\\% CI", "$p$", "$r$", "H1 ($\\geq$30 pp)"], rows)
 
     # Table: hallucination + omission + citation per model
     rows = []
@@ -613,14 +613,15 @@ def write_tables(S: dict, d: Data) -> None:
             continue
         rows.append([label(m), pct(h["rag"]), pct(h["base"]), pp(h["diff"]), p_str(h["p"]),
                      pct(o["rag"]) if o else "--", pct(o["base"]) if o else "--",
-                     pct(c["rag"], 0) if c else "--", pct(c["base"], 0) if c else "--"])
+                     pct(c["rag"], 0) if c else "--"])
     tex_table("tab_multimodel_halluc",
-              "Hallucination (incorrect or fabricated legal claim, judge 1 = GPT-4.1), omission of a key fact, and "
-              "citation validity by generator model, retrieval-augmented versus baseline (run 1, N = 24 paired questions). "
+              "Hallucination (incorrect or fabricated legal claim, judge 1 = GPT-4.1) and omission of a key fact by "
+              "generator model, retrieval-augmented versus baseline (run 1, N = 24 paired questions), with the share of "
+              "grounded answers citing the expected instrument (no baseline answer cited one). "
               "$p$ from the exact McNemar test on discordant pairs.",
-              "tab:multimodel-halluc", "lcccccccc",
-              ["Model", "Halluc. RAG", "Halluc. base", "$\\Delta$ (pp)", "$p$", "Omission RAG", "Omission base",
-               "Cited RAG", "Cited base"], rows, wide=True)
+              "tab:multimodel-halluc", "lccccccc",
+              ["Model", "Halluc. RAG", "Halluc. base", "$\\Delta$ (pp)", "$p$", "Omit. RAG", "Omit. base",
+               "Cited RAG"], rows)
 
     # Table: primary model, all metrics (June-style table with inference)
     e = pm.get(PRIMARY, {})
@@ -646,7 +647,7 @@ def write_tables(S: dict, d: Data) -> None:
               "Primary comparison (GPT-4o, run 1, N = 24 paired questions): retrieval-augmented system versus "
               "no-retrieval baseline on every metric, with paired difference, bootstrap 95\\% CI, test and effect size.",
               "tab:primary-gpt4o", "lccccccc",
-              ["Metric", "RAG", "Baseline", "$\\Delta$ (pp)", "95\\% CI", "Test", "$p$", "$r$"], rows, wide=True)
+              ["Metric", "RAG", "Baseline", "$\\Delta$ (pp)", "95\\% CI", "Test", "$p$", "$r$"], rows)
 
     # Table: stability across runs
     st = S["stability"]
@@ -684,8 +685,8 @@ def write_tables(S: dict, d: Data) -> None:
               "12 Maltese questions). Last column: Mann--Whitney $U$ test of the per-question retrieval gain, "
               "English versus Maltese.",
               "tab:bylang", "lccccccc",
-              ["Model", "EN RAG", "EN base", "EN base halluc.", "MT RAG", "MT base", "MT base halluc.", "$p$ (EN vs MT gain)"],
-              rows, wide=True)
+              ["Model", "EN RAG", "EN base", "EN halluc.", "MT RAG", "MT base", "MT halluc.", "$p$ (gain)"],
+              rows)
 
     # Table: across-model omnibus tests
     am = S["across_models_run1"]
@@ -728,11 +729,11 @@ def write_tables(S: dict, d: Data) -> None:
                   "declined for lack of source coverage (refusal), share asserting specific legal figures or rules "
                   "as fact (judge 1), and language mirroring, by model and condition. $p$ from the exact McNemar test "
                   "on refusal, RAG versus baseline.",
-                  "tab:oos", "lcccccccc",
-                  ["Model", "Refusal RAG", "Refusal base", "$p$", "Asserts RAG", "Asserts base", "Mirror RAG", "Mirror base"],
-                  rows, wide=True)
+                  "tab:oos", "lccccccc",
+                  ["Model", "Refuse RAG", "Refuse base", "$p$", "Assert RAG", "Assert base", "Mirror RAG", "Mirror base"],
+                  rows)
 
-    # Table: ablation
+    # Table: ablation (retrieval metrics) + separate downstream table
     ab = S.get("ablation", {})
     rows = []
     for emb in ("text-embedding-3-large", "text-embedding-3-small"):
@@ -743,20 +744,34 @@ def write_tables(S: dict, d: Data) -> None:
             y = x.get(c)
             if not y:
                 continue
-            ds = ab.get("downstream", {}).get(c) if emb == "text-embedding-3-large" else None
             rows.append([emb.replace("text-embedding-3-", "3-") if c == CONFIG_ORDER[0] else "", CONFIG_LABEL[c],
                          dec(y["hit1"]), dec(y["hit5"]), dec(y["mrr"]), dec(y["mrr_en"]), dec(y["mrr_mt"]),
-                         dec(y["latency_s"]),
-                         dec(ds["kp_alias"]) if ds else "--", pct(ds["hallucination"]) if ds else "--"])
+                         dec(y["latency_s"])])
     if rows:
         tex_table("tab_ablation",
                   "Retrieval ablation over the 24 gold queries: Hit@1, Hit@5 and mean reciprocal rank (MRR) of the "
-                  "expected statutory provision for four retrieval configurations and two embedding models, mean "
-                  "retrieval latency, and (large embedder only) downstream GPT-4o fact precision (alias) and "
-                  "hallucination rate when each configuration supplies the context.",
-                  "tab:ablation", "llcccccccc",
-                  ["Embedder", "Configuration", "Hit@1", "Hit@5", "MRR", "MRR EN", "MRR MT", "Latency (s)",
-                   "Downstream precision", "Downstream halluc."], rows, wide=True)
+                  "expected statutory provision for four retrieval configurations and two embedding models, with mean "
+                  "retrieval latency.",
+                  "tab:ablation", "llcccccc",
+                  ["Embedder", "Configuration", "Hit@1", "Hit@5", "MRR", "MRR EN", "MRR MT", "Latency (s)"], rows)
+    rows = []
+    for c in CONFIG_ORDER:
+        ds = ab.get("downstream", {}).get(c)
+        if not ds:
+            continue
+        rows.append([CONFIG_LABEL[c], dec(ds["kp_strict"]), dec(ds["kp_alias"]), pct(ds["citation_rate"], 0),
+                     pct(ds["hallucination"]), pct(ds["omission"]),
+                     "--" if ds.get("vs_deployed_p_holm") is None else p_str(ds["vs_deployed_p_holm"])])
+    if rows:
+        fr = ab.get("downstream", {}).get("friedman_kp_alias") or {}
+        tex_table("tab_ablation_downstream",
+                  "Downstream answer quality when each retrieval configuration (large embedder) supplies the context "
+                  "for a GPT-4o answer to the 24 gold questions: fact precision under both matchers, citation validity, "
+                  "incorrect-claim and omission rates (judge 1), and the Holm-corrected Wilcoxon $p$ of each "
+                  "configuration against the deployed one on alias precision"
+                  + (f" (Friedman $\\chi^2$(3) = {fr['chi2']:.2f}, $p$ = {fr['p']:.2f})." if fr.get("chi2") else "."),
+                  "tab:ablation-downstream", "lcccccc",
+                  ["Configuration", "Strict", "Alias", "Cited", "Halluc.", "Omission", "$p$ vs deployed"], rows)
 
     # Table: cost/latency
     co = S["cost"]

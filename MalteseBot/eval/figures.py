@@ -95,7 +95,12 @@ def grouped_bars(ax, cats, a, b, a_ci, b_ci, la, lb, ylabel, fmt="{:.2f}", ylim=
     ax.set_xticklabels(cats)
     ax.set_ylim(*ylim)
     ax.set_ylabel(ylabel)
-    ax.legend(loc="upper right", ncol=2, bbox_to_anchor=(1.0, 1.12))
+
+
+def shared_legend(fig):
+    handles, labels = fig.axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="lower center", ncol=len(labels), frameon=False, bbox_to_anchor=(0.5, 0.0))
+    fig.tight_layout(rect=(0, 0.07, 1, 1))
 
 
 def fig_multimodel(rows, out: Path):
@@ -122,7 +127,7 @@ def fig_multimodel(rows, out: Path):
                  ylim=(0, 1.18))
     ax1.set_title("(a) Fact precision, 95% bootstrap CI", loc="left")
     ax2.set_title("(b) Incorrect-claim rate, 95% Wilson CI", loc="left")
-    fig.tight_layout()
+    shared_legend(fig)
     fig.savefig(out / "fig_multimodel.png")
     plt.close(fig)
     print("wrote fig_multimodel.png")
@@ -180,7 +185,7 @@ def fig_ablation(S: dict, out: Path):
     ax1.set_ylim(0, 1.15)
     ax1.set_ylabel("Mean reciprocal rank of expected provision")
     ax1.set_title("(a) Retrieval quality by configuration", loc="left")
-    ax1.legend(loc="upper right", bbox_to_anchor=(1.0, 1.12), ncol=2)
+    ax1.legend(loc="upper center", bbox_to_anchor=(0.5, -0.3), ncol=2)
     if ds:
         kp = [ds.get(c, {}).get("kp_alias", math.nan) for c in CONFIG_ORDER]
         hl = [ds.get(c, {}).get("hallucination", math.nan) for c in CONFIG_ORDER]
@@ -195,8 +200,8 @@ def fig_ablation(S: dict, out: Path):
         ax2.set_ylim(0, 1.15)
         ax2.set_ylabel("Proportion")
         ax2.set_title("(b) Downstream GPT-4o answer quality", loc="left")
-        ax2.legend(loc="upper right", bbox_to_anchor=(1.0, 1.12), ncol=2)
-    fig.tight_layout()
+        ax2.legend(loc="upper center", bbox_to_anchor=(0.5, -0.3), ncol=2)
+    fig.tight_layout(rect=(0, 0.04, 1, 1))
     fig.savefig(out / "fig_ablation.png")
     plt.close(fig)
     print("wrote fig_ablation.png")
@@ -224,7 +229,7 @@ def fig_oos(S: dict, out: Path):
                  fmt="{:.0%}", ylim=(0, 1.18))
     ax1.set_title("(a) Honest refusal on out-of-scope questions", loc="left")
     ax2.set_title("(b) Fabricated specifics (judge 1), 95% Wilson CI", loc="left")
-    fig.tight_layout()
+    shared_legend(fig)
     fig.savefig(out / "fig_oos.png")
     plt.close(fig)
     print("wrote fig_oos.png")

@@ -105,8 +105,9 @@ with st.sidebar:
     )
     model_choice = st.selectbox(
         "Model",
-        options=["gpt-4o", "gpt-4o-mini"],
-        help="gpt-4o: best quality | gpt-4o-mini: cheaper",
+        options=["gpt-4o-2024-11-20", "gpt-4o-mini", "gpt-4.1", "gpt-4.1-nano", "gpt-5-mini", "gpt-5.5"],
+        help="The six generator models compared in the dissertation (Chapter 4). "
+             "GPT-5 models run with low reasoning effort; the others at temperature 0.1.",
     )
     k_choice = st.slider("Context chunks (k)", min_value=2, max_value=10, value=5,
                          help="Number of Cap. 65 excerpts injected into each prompt")
@@ -231,12 +232,14 @@ if question := st.chat_input(placeholder):
     with st.chat_message("assistant", avatar="⚖️"):
         response_container = st.empty()
         full_answer = ""
-        stream = openai_client.chat.completions.create(
-            model=model,
-            messages=messages,
-            temperature=0.1,
-            stream=True,
-        )
+        # Same per-family parameters as eval/llm.py: reasoning models reject
+        # temperature and take a completion budget + reasoning effort instead.
+        gen_kwargs = {"model": model, "messages": messages, "stream": True}
+        if model.startswith(("gpt-5", "o1", "o3", "o4")):
+            gen_kwargs.update(reasoning_effort="low", max_completion_tokens=2000)
+        else:
+            gen_kwargs["temperature"] = 0.1
+        stream = openai_client.chat.completions.create(**gen_kwargs)
         for chunk in stream:
             delta = chunk.choices[0].delta.content or ""
             full_answer += delta

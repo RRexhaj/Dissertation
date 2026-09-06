@@ -122,7 +122,7 @@ def tex_table(name: str, caption: str, label: str, colspec: str, header: list[st
               wide: bool = False) -> None:
     TABLES.mkdir(exist_ok=True)
     lines = ["\\begin{table}[H]", "\\centering", f"\\caption{{{caption}}}", f"\\label{{{label}}}",
-             "{\\def\\arraystretch{1.3}"]
+             "{\\footnotesize\\setstretch{1.0}\\setlength{\\tabcolsep}{4pt}\\def\\arraystretch{1.2}"]
     if wide:
         lines.append("\\resizebox{\\textwidth}{!}{%")
     lines += [f"\\begin{{tabular}}{{{colspec}}}", "\\toprule",

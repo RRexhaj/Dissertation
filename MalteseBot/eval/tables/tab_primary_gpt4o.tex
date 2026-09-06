@@ -2,8 +2,7 @@
 \centering
 \caption{Primary comparison (GPT-4o, run 1, N = 24 paired questions): retrieval-augmented system versus no-retrieval baseline on every metric, with paired difference, bootstrap 95\% CI, test and effect size.}
 \label{tab:primary-gpt4o}
-{\def\arraystretch{1.3}
-\resizebox{\textwidth}{!}{%
+{\footnotesize\setstretch{1.0}\setlength{\tabcolsep}{4pt}\def\arraystretch{1.2}
 \begin{tabular}{lccccccc}
 \toprule
 \textbf{Metric} & \textbf{RAG} & \textbf{Baseline} & \textbf{$\Delta$ (pp)} & \textbf{95\% CI} & \textbf{Test} & \textbf{$p$} & \textbf{$r$} \\
@@ -16,6 +15,6 @@ Hallucination (judge 2, GPT-4o) & 4.2\% & 20.8\% & -16.7 & [-33.3, -4.2] & McNem
 Omission (judge 1) & 0.0\% & 37.5\% & -37.5 & [-58.3, -16.7] & McNemar & 0.004 & -- \\
 ROUGE-L & 0.24 & 0.23 & +1.4 & [-3.6, +6.4] & Wilcoxon & 0.406 & 0.20 \\
 \bottomrule
-\end{tabular}}
+\end{tabular}
 }
 \end{table}

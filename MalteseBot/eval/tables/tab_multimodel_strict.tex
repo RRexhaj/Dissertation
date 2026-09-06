@@ -2,8 +2,7 @@
 \centering
 \caption{Fact precision (strict matcher, pre-registered) by generator model, retrieval-augmented versus no-retrieval baseline on the 24-item gold set (run 1). $\Delta$ in percentage points with percentile-bootstrap 95\% CI; Wilcoxon signed-rank test; $r$ = matched-pairs rank-biserial correlation.}
 \label{tab:multimodel-strict}
-{\def\arraystretch{1.3}
-\resizebox{\textwidth}{!}{%
+{\footnotesize\setstretch{1.0}\setlength{\tabcolsep}{4pt}\def\arraystretch{1.2}
 \begin{tabular}{lccccccc}
 \toprule
 \textbf{Model} & \textbf{RAG} & \textbf{Baseline} & \textbf{$\Delta$ (pp)} & \textbf{95\% CI} & \textbf{$p$} & \textbf{$r$} & \textbf{H1 ($\geq$30 pp)} \\
@@ -15,6 +14,6 @@ GPT-4.1 nano & 0.88 & 0.47 & +40.3 & [+26.4, +54.2] & $<$0.001 & 1.00 & Yes \\
 GPT-5 mini & 0.89 & 0.54 & +35.4 & [+22.2, +50.0] & $<$0.001 & 1.00 & Yes \\
 GPT-5.5 & 0.91 & 0.66 & +24.7 & [+9.7, +41.7] & 0.005 & 0.91 & No \\
 \bottomrule
-\end{tabular}}
+\end{tabular}
 }
 \end{table}
