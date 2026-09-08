@@ -86,6 +86,28 @@ def _get_logger() -> compliance.SessionLogger:
     return compliance.SessionLogger()
 
 
+def _feedback_control(idx: int, question: str, answer: str, citations: list[str]) -> None:
+    """Thumbs up/down under an answer; every change is logged pseudonymously."""
+    key = f"fb_{idx}"
+    choice = st.feedback("thumbs", key=key)
+    reason = ""
+    if choice == 0:
+        reason = st.text_input(
+            "What was wrong? (optional, no personal details)",
+            key=f"{key}_reason",
+            placeholder="e.g. the limit quoted is out of date",
+        )
+    if choice is not None and st.session_state.get(f"{key}_logged") != (choice, reason):
+        _get_logger().log_feedback(
+            query=question,
+            answer=answer,
+            rating="up" if choice == 1 else "down",
+            reason=reason,
+            citations=citations,
+        )
+        st.session_state[f"{key}_logged"] = (choice, reason)
+
+
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 
 with st.sidebar:
@@ -154,7 +176,10 @@ st.markdown(
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-for msg in st.session_state.messages:
+_last_question = ""
+for _i, msg in enumerate(st.session_state.messages):
+    if msg["role"] == "user":
+        _last_question = msg["content"]
     with st.chat_message(msg["role"], avatar="🧑" if msg["role"] == "user" else "⚖️"):
         st.markdown(msg["content"], unsafe_allow_html=True)
         if msg["role"] == "assistant" and msg.get("meta"):
@@ -186,6 +211,7 @@ for msg in st.session_state.messages:
                 f'<div class="disclaimer">AI-generated · not legal advice · {LESA_CONTACT}</div>',
                 unsafe_allow_html=True,
             )
+            _feedback_control(_i, _last_question, msg["content"], _meta.get("citations", []))
 
 # ── Input + response ─────────────────────────────────────────────────────────
 
@@ -309,3 +335,5 @@ if question := st.chat_input(placeholder):
         "content": full_answer,
         "meta": meta,
     })
+    # Re-render from history so the new answer carries its feedback control.
+    st.rerun()

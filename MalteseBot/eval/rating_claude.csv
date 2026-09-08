@@ -1,0 +1,121 @@
+rating_id,incorrect_claim,omission,note
+R001,0,0,
+R002,1,0,"probation given as under two years (it is three); 0.2 g/l is the same as 20 mg/100 ml"
+R003,1,1,"payment via Transport Malta or a local-authority site is wrong (contraventions.gov.mt); tripling after 30 days absent"
+R004,0,0,
+R005,0,0,
+R006,0,0,
+R007,0,0,
+R008,1,0,"general open-road limit given as 60 km/h (it is 80)"
+R009,0,0,
+R010,0,0,
+R011,1,0,"conditions the 17-year learner start on working as an apprentice"
+R012,0,0,
+R013,0,0,
+R014,0,0,
+R015,0,1,"doubling not stated"
+R016,0,0,
+R017,0,0,
+R018,0,0,
+R019,0,1,"duty to stop and exchange details absent"
+R020,0,0,
+R021,0,0,
+R022,1,1,"wrong payment site and body (les.gov.mt, police); tripling absent"
+R023,0,0,
+R024,0,0,
+R025,1,1,"asserts a legal duty to report every incident to the insurer; stop and exchange details absent"
+R026,0,0,
+R027,1,1,"wrong payment site (les.gov.mt); tripling absent"
+R028,0,0,
+R029,0,0,
+R030,0,0,
+R031,1,1,"three-year period (it is any 12-month period); 12-month absent"
+R032,1,0,"says the driver is at risk and invents a two-year window"
+R033,1,0,"claims Malta has motorways (named bypasses)"
+R034,0,0,
+R035,1,1,"25 km/h and about 6 km/h invented; 20 and 10 km/h absent"
+R036,0,0,
+R037,0,0,
+R038,0,0,
+R039,0,0,
+R040,0,0,
+R041,0,0,
+R042,1,1,"25 km/h and 6 km/h invented; 20 and 10 km/h absent"
+R043,0,1,"doubling not stated"
+R044,0,0,
+R045,0,0,
+R046,0,1,"duty to stop and exchange details absent"
+R047,0,0,
+R048,0,0,
+R049,1,0,"motorway limit of 100 km/h invented; Malta has no motorways"
+R050,0,0,
+R051,0,0,
+R052,0,0,
+R053,0,0,
+R054,1,1,"zero limit for new and professional drivers (it is 20 mg/100 ml); 20 and 0.02 absent"
+R055,0,0,
+R056,0,0,
+R057,0,0,
+R058,0,0,
+R059,0,0,
+R060,1,1,"payment via Transport Malta site is wrong; site and tripling absent"
+R061,0,0,
+R062,0,0,
+R063,0,0,
+R064,0,0,
+R065,1,0,"probation given as under two years (it is three)"
+R066,1,0,"lower limit extended to motorcyclists, which the law does not do"
+R067,0,0,
+R068,0,0,
+R069,1,0,"probationary period given as two years (it is three)"
+R070,0,0,
+R071,0,1,"doubling not stated"
+R072,1,0,"says the driver is at risk and that any further points revoke the licence"
+R073,1,0,"motorway limit of 100 km/h invented"
+R074,0,1,"duty to stop and exchange details absent"
+R075,0,0,
+R076,0,0,
+R077,0,0,
+R078,0,0,
+R079,0,0,
+R080,1,1,"invented enforcement steps (wage deduction, immobilisation); doubling absent"
+R081,0,0,
+R082,0,0,
+R083,0,0,
+R084,0,1,"duty to stop and exchange details absent"
+R085,0,0,
+R086,0,0,
+R087,1,1,"25 km/h and 6 km/h invented; 20 and 10 km/h absent"
+R088,1,0,"suspension of one to three months invented (licence is revoked)"
+R089,0,0,
+R090,0,0,
+R091,1,1,"payment site lesa.mt invented; tripling absent"
+R092,0,0,
+R093,0,0,
+R094,0,0,
+R095,0,0,
+R096,0,0,
+R097,0,0,
+R098,0,0,
+R099,0,0,
+R100,0,0,
+R101,0,0,
+R102,0,0,
+R103,0,1,"does not answer whether private settlement is obligatory or that insurance may be involved"
+R104,0,0,
+R105,0,1,"doubling not stated"
+R106,0,0,
+R107,1,0,"motorway limit of 100 km/h invented"
+R108,0,0,
+R109,0,0,
+R110,1,1,"zero-tolerance limit invented (it is 20 mg/100 ml); 20 and 0.02 absent"
+R111,0,0,
+R112,0,0,
+R113,0,0,
+R114,0,0,
+R115,0,0,
+R116,0,0,
+R117,1,1,"0.08 percent and 80 mg invented (it is 50 mg/100 ml); 50 and 0.05 absent"
+R118,0,0,
+R119,0,0,
+R120,0,0,

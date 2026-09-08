@@ -97,6 +97,34 @@ class SessionLogger:
         with self.log_path.open("a", encoding="utf-8") as fh:
             fh.write(json.dumps(record, ensure_ascii=False) + "\n")
 
+    def log_feedback(
+        self,
+        *,
+        query: str,
+        answer: str,
+        rating: str,
+        reason: str = "",
+        citations: list[str] | None = None,
+    ) -> None:
+        """Record a thumbs-up/down judgement on an answer.
+
+        The record is linked to the query and the answer only through their
+        hashes. The optional free-text reason is truncated and stored as
+        given, so the interface asks users not to include personal details.
+        """
+        record = {
+            "ts": int(time.time()),
+            "session": self._pseudonym(),
+            "kind": "feedback",
+            "q_hash": hashlib.sha256(query.encode("utf-8")).hexdigest()[:16],
+            "a_hash": hashlib.sha256(answer.encode("utf-8")).hexdigest()[:16],
+            "rating": rating,
+            "reason": reason.strip()[:300],
+            "citations": citations or [],
+        }
+        with self.log_path.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps(record, ensure_ascii=False) + "\n")
+
 
 def format_confidence(label: str, score: float, k_align: int, k_total: int, lang: str) -> str:
     """Human-readable trust-calibration cue."""

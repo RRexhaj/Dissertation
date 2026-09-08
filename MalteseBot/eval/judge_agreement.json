@@ -1,0 +1,144 @@
+{
+  "n_rated": 120,
+  "n_total": 120,
+  "n_disputed": 30,
+  "n_adjudicated": 0,
+  "pairs": {
+    "halluc": {
+      "j1_vs_j2": {
+        "kappa": 0.714,
+        "interpretation": "substantial",
+        "n": 120,
+        "agreement": 0.9
+      },
+      "j1_vs_j3": {
+        "kappa": 0.747,
+        "interpretation": "substantial",
+        "n": 120,
+        "agreement": 0.908
+      },
+      "j2_vs_j3": {
+        "kappa": 0.677,
+        "interpretation": "substantial",
+        "n": 120,
+        "agreement": 0.892
+      }
+    },
+    "omission": {
+      "j1_vs_j2": {
+        "kappa": 0.784,
+        "interpretation": "substantial",
+        "n": 120,
+        "agreement": 0.908
+      },
+      "j1_vs_j3": {
+        "kappa": 0.75,
+        "interpretation": "substantial",
+        "n": 120,
+        "agreement": 0.908
+      },
+      "j2_vs_j3": {
+        "kappa": 0.66,
+        "interpretation": "substantial",
+        "n": 120,
+        "agreement": 0.867
+      }
+    }
+  },
+  "judges": {
+    "halluc": {
+      "j1": {
+        "tp": 18,
+        "tn": 84,
+        "fp": 0,
+        "fn": 0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "kappa_vs_reference": 1.0
+      },
+      "j2": {
+        "tp": 18,
+        "tn": 84,
+        "fp": 0,
+        "fn": 0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "kappa_vs_reference": 1.0
+      },
+      "j3": {
+        "tp": 18,
+        "tn": 84,
+        "fp": 0,
+        "fn": 0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "kappa_vs_reference": 1.0
+      }
+    },
+    "omission": {
+      "j1": {
+        "tp": 23,
+        "tn": 78,
+        "fp": 0,
+        "fn": 0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "kappa_vs_reference": 1.0
+      },
+      "j2": {
+        "tp": 23,
+        "tn": 78,
+        "fp": 0,
+        "fn": 0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "kappa_vs_reference": 1.0
+      },
+      "j3": {
+        "tp": 23,
+        "tn": 78,
+        "fp": 0,
+        "fn": 0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "kappa_vs_reference": 1.0
+      }
+    }
+  },
+  "fleiss": {
+    "halluc": {
+      "kappa": 0.713,
+      "interpretation": "substantial"
+    },
+    "omission": {
+      "kappa": 0.73,
+      "interpretation": "substantial"
+    }
+  },
+  "disputed_by_condition": {
+    "Baseline": 25,
+    "RAG": 5
+  },
+  "halluc_disputed": 18,
+  "halluc_rate_j1": 0.25,
+  "halluc_rate_j2": 0.2,
+  "halluc_rate_j3": 0.225,
+  "halluc_n_reference": 102,
+  "halluc_rate_reference": 0.176,
+  "halluc_rate_reference_RAG": 0.0,
+  "halluc_rate_reference_Baseline": 0.391,
+  "omission_disputed": 19,
+  "omission_rate_j1": 0.283,
+  "omission_rate_j2": 0.325,
+  "omission_rate_j3": 0.192,
+  "omission_n_reference": 101,
+  "omission_rate_reference": 0.228,
+  "omission_rate_reference_RAG": 0.017,
+  "omission_rate_reference_Baseline": 0.512
+}
