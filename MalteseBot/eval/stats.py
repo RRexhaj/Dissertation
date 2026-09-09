@@ -203,9 +203,16 @@ def sd(vals) -> float | None:
 # LaTeX table writer (matches the style of the June tables)
 # ---------------------------------------------------------------------------
 
+# Tables whose natural width exceeds the text block (measured on the compiled PDF);
+# they are scaled to \textwidth with \resizebox instead of overflowing the margin.
+WIDE_TABLES = {"tab_primary_gpt4o", "tab_across_models", "tab_stability", "tab_ablation",
+               "tab_oos", "tab_multimodel_halluc"}
+
+
 def tex_table(name: str, caption: str, tlabel: str, colspec: str, header: list[str],
               rows: list[list[str]], wide: bool = False, note: str | None = None) -> None:
     TABLES.mkdir(exist_ok=True)
+    wide = wide or name in WIDE_TABLES
     lines = ["\\begin{table}[H]", "\\centering", f"\\caption{{{caption}}}", f"\\label{{{tlabel}}}",
              "{\\footnotesize\\setstretch{1.0}\\setlength{\\tabcolsep}{4pt}\\def\\arraystretch{1.2}"]
     if wide:
@@ -626,11 +633,11 @@ def write_tables(S: dict, d: Data) -> None:
     # Table: primary model, all metrics (June-style table with inference)
     e = pm.get(PRIMARY, {})
     rows = []
-    spec = [("kp_strict", "Fact precision (strict, pre-registered)", "Wilcoxon"),
-            ("kp_alias", "Fact precision (alias-tolerant)", "Wilcoxon"),
+    spec = [("kp_strict", "Fact precision (strict)", "Wilcoxon"),
+            ("kp_alias", "Fact precision (alias)", "Wilcoxon"),
             ("cite_ok", "Citation validity", "McNemar"),
-            ("halluc_j1", "Hallucination (judge 1, GPT-4.1)", "McNemar"),
-            ("halluc_j2", "Hallucination (judge 2, GPT-4o)", "McNemar"),
+            ("halluc_j1", "Incorrect claim (judge 1, GPT-4.1)", "McNemar"),
+            ("halluc_j2", "Incorrect claim (judge 2, GPT-4o)", "McNemar"),
             ("omission_j1", "Omission (judge 1)", "McNemar"),
             ("rouge_l", "ROUGE-L", "Wilcoxon")]
     for metric, nm, test in spec:

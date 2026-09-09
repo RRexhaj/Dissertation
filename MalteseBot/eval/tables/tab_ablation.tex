@@ -3,6 +3,7 @@
 \caption{Retrieval ablation over the 24 gold queries: Hit@1, Hit@5 and mean reciprocal rank (MRR) of the expected statutory provision for four retrieval configurations and two embedding models, with mean retrieval latency.}
 \label{tab:ablation}
 {\footnotesize\setstretch{1.0}\setlength{\tabcolsep}{4pt}\def\arraystretch{1.2}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{llcccccc}
 \toprule
 \textbf{Embedder} & \textbf{Configuration} & \textbf{Hit@1} & \textbf{Hit@5} & \textbf{MRR} & \textbf{MRR EN} & \textbf{MRR MT} & \textbf{Latency (s)} \\
@@ -16,6 +17,6 @@
  & Hybrid (0.6/0.4) & 0.71 & 1.00 & 0.84 & 0.78 & 0.90 & 0.17 \\
  & Hybrid + rerank (deployed) & 0.67 & 1.00 & 0.81 & 0.71 & 0.92 & 1.13 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 }
 \end{table}

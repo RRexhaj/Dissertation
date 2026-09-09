@@ -3,6 +3,7 @@
 \caption{Out-of-scope robustness set (10 questions outside the corpus): share of answers that explicitly declined for lack of source coverage (refusal), share asserting specific legal figures or rules as fact (judge 1), and language mirroring, by model and condition. $p$ from the exact McNemar test on refusal, RAG versus baseline.}
 \label{tab:oos}
 {\footnotesize\setstretch{1.0}\setlength{\tabcolsep}{4pt}\def\arraystretch{1.2}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{lccccccc}
 \toprule
 \textbf{Model} & \textbf{Refuse RAG} & \textbf{Refuse base} & \textbf{$p$} & \textbf{Assert RAG} & \textbf{Assert base} & \textbf{Mirror RAG} & \textbf{Mirror base} \\
@@ -14,6 +15,6 @@ GPT-4.1 nano & 40\% & 0\% & 0.125 & 20\% & 100\% & 90\% & 100\% \\
 GPT-5 mini & 30\% & 0\% & 0.250 & 10\% & 70\% & 100\% & 100\% \\
 GPT-5.5 & 0\% & 0\% & 1.000 & 0\% & 90\% & 100\% & 100\% \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 }
 \end{table}

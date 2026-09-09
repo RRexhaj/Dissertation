@@ -1,8 +1,9 @@
 \begin{table}[H]
 \centering
 {\footnotesize\setstretch{1.0}\setlength{\tabcolsep}{4pt}\def\arraystretch{1.2}
-\caption{Judge validation on the blind sample of 120 answers. Pairwise Cohen's $\kappa$ between the two GPT judges and the cross-vendor third judge (Claude); sensitivity, specificity and accuracy of each judge against the reference verdict, which is the unanimous verdict where the three judges agreed and PENDING ADJUDICATION: disputed rows are excluded (n = 102).}
+\caption{Judge validation on the blind sample of 120 answers: pairwise Cohen's $\kappa$ and raw agreement between the two GPT judges and the cross-vendor third judge (Claude), with Fleiss' $\kappa$ across the three.}
 \label{tab:judge-agreement}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{llcccc}
 \toprule
 Criterion & Comparison & Cohen's $\kappa$ & Agreement & Sensitivity & Specificity \\
@@ -11,17 +12,11 @@ Incorrect claim & Judge 1 vs judge 2 & 0.71 (substantial) & 0.90 & -- & -- \\
  & Judge 1 vs judge 3 & 0.75 (substantial) & 0.91 & -- & -- \\
  & Judge 2 vs judge 3 & 0.68 (substantial) & 0.89 & -- & -- \\
  & Three judges (Fleiss) & 0.71 (substantial) & -- & -- & -- \\
- & Judge 1 (GPT-4.1) vs reference & 1.00 & 1.00 & 1.00 & 1.00 \\
- & Judge 2 (GPT-4o) vs reference & 1.00 & 1.00 & 1.00 & 1.00 \\
- & Judge 3 (Claude) vs reference & 1.00 & 1.00 & 1.00 & 1.00 \\
 \midrule
 Omission & Judge 1 vs judge 2 & 0.78 (substantial) & 0.91 & -- & -- \\
  & Judge 1 vs judge 3 & 0.75 (substantial) & 0.91 & -- & -- \\
  & Judge 2 vs judge 3 & 0.66 (substantial) & 0.87 & -- & -- \\
  & Three judges (Fleiss) & 0.73 (substantial) & -- & -- & -- \\
- & Judge 1 (GPT-4.1) vs reference & 1.00 & 1.00 & 1.00 & 1.00 \\
- & Judge 2 (GPT-4o) vs reference & 1.00 & 1.00 & 1.00 & 1.00 \\
- & Judge 3 (Claude) vs reference & 1.00 & 1.00 & 1.00 & 1.00 \\
 \bottomrule
-\end{tabular}}
+\end{tabular}}}
 \end{table}

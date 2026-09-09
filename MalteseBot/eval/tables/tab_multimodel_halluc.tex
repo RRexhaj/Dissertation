@@ -3,6 +3,7 @@
 \caption{Hallucination (incorrect or fabricated legal claim, judge 1 = GPT-4.1) and omission of a key fact by generator model, retrieval-augmented versus baseline (run 1, N = 24 paired questions), with the share of grounded answers citing the expected instrument (no baseline answer cited one). $p$ from the exact McNemar test on discordant pairs.}
 \label{tab:multimodel-halluc}
 {\footnotesize\setstretch{1.0}\setlength{\tabcolsep}{4pt}\def\arraystretch{1.2}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{lccccccc}
 \toprule
 \textbf{Model} & \textbf{Halluc. RAG} & \textbf{Halluc. base} & \textbf{$\Delta$ (pp)} & \textbf{$p$} & \textbf{Omit. RAG} & \textbf{Omit. base} & \textbf{Cited RAG} \\
@@ -14,6 +15,6 @@ GPT-4.1 nano & 12.5\% & 58.3\% & -45.8 & 0.007 & 12.5\% & 83.3\% & 96\% \\
 GPT-5 mini & 4.2\% & 50.0\% & -45.8 & $<$0.001 & 8.3\% & 58.3\% & 100\% \\
 GPT-5.5 & 4.2\% & 29.2\% & -25.0 & 0.070 & 8.3\% & 37.5\% & 83\% \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 }
 \end{table}

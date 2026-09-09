@@ -266,17 +266,27 @@ def main() -> int:
     # ---- LaTeX tables -------------------------------------------------------------------------
     TABLES.mkdir(exist_ok=True)
     n_ref = out["halluc_n_reference"]
-    adj_note = ("the adjudicated verdict where they disagreed" if adj else
-                "PENDING ADJUDICATION: disputed rows are excluded")
+    # Without adjudication the "reference" is just the rows the judges already agreed
+    # on, so every judge would score a perfect 1.00 against it. That is an artefact of
+    # the construction, not a result, so those rows are only emitted once the
+    # adjudicated verdicts exist.
+    if adj:
+        caption = ("Judge validation on the blind sample of " + str(len(rids)) + " answers. Pairwise Cohen's "
+                   "$\\kappa$ between the two GPT judges and the cross-vendor third judge (Claude); sensitivity, "
+                   "specificity and accuracy of each judge against the reference verdict, which is the unanimous "
+                   "verdict where the three judges agreed and the adjudicated verdict where they disagreed "
+                   "(n = " + str(n_ref) + ").")
+    else:
+        caption = ("Judge validation on the blind sample of " + str(len(rids)) + " answers: pairwise Cohen's "
+                   "$\\kappa$ and raw agreement between the two GPT judges and the cross-vendor third judge "
+                   "(Claude), with Fleiss' $\\kappa$ across the three.")
     lines = [
         "\\begin{table}[H]",
         "\\centering",
         "{\\footnotesize\\setstretch{1.0}\\setlength{\\tabcolsep}{4pt}\\def\\arraystretch{1.2}",
-        "\\caption{Judge validation on the blind sample of " + str(len(rids)) + " answers. Pairwise Cohen's "
-        "$\\kappa$ between the two GPT judges and the cross-vendor third judge (Claude); sensitivity, specificity "
-        "and accuracy of each judge against the reference verdict, which is the unanimous verdict where the three "
-        "judges agreed and " + adj_note + " (n = " + str(n_ref) + ").}",
+        "\\caption{" + caption + "}",
         "\\label{tab:judge-agreement}",
+        "\\resizebox{\\textwidth}{!}{%",
         "\\begin{tabular}{llcccc}",
         "\\toprule",
         "Criterion & Comparison & Cohen's $\\kappa$ & Agreement & Sensitivity & Specificity \\\\",
@@ -291,17 +301,18 @@ def main() -> int:
             first = False
         fk = out["fleiss"][metric]
         lines.append(f" & Three judges (Fleiss) & {fk['kappa']:.2f} ({fk['interpretation']}) & -- & -- & -- \\\\")
-        for j in JUDGES:
-            c = out["judges"][metric][j]
-            se = "--" if c["sensitivity"] is None else f"{c['sensitivity']:.2f}"
-            sp = "--" if c["specificity"] is None else f"{c['specificity']:.2f}"
-            lines.append(f" & {JUDGE_NAMES[j]} vs reference & {c['kappa_vs_reference']:.2f} & {c['accuracy']:.2f} & {se} & {sp} \\\\")
+        if adj:
+            for j in JUDGES:
+                c = out["judges"][metric][j]
+                se = "--" if c["sensitivity"] is None else f"{c['sensitivity']:.2f}"
+                sp = "--" if c["specificity"] is None else f"{c['specificity']:.2f}"
+                lines.append(f" & {JUDGE_NAMES[j]} vs reference & {c['kappa_vs_reference']:.2f} & {c['accuracy']:.2f} & {se} & {sp} \\\\")
         if metric == "halluc":
             lines.append("\\midrule")
-    lines += ["\\bottomrule", "\\end{tabular}}", "\\end{table}"]
+    lines += ["\\bottomrule", "\\end{tabular}}}", "\\end{table}"]
     (TABLES / "tab_judge_agreement.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-    # Confusion counts for Appendix F
+    # Confusion counts for Appendix F (only meaningful once disagreements are adjudicated)
     lines = [
         "\\begin{table}[H]",
         "\\centering",
@@ -321,7 +332,12 @@ def main() -> int:
         if metric == "halluc":
             lines.append("\\midrule")
     lines += ["\\bottomrule", "\\end{tabular}}", "\\end{table}"]
-    (TABLES / "tab_judge_confusion.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    if adj:
+        (TABLES / "tab_judge_confusion.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    else:
+        # Before adjudication the reference verdict holds only the rows the judges
+        # already agreed on, so the confusion counts would be vacuous.
+        (TABLES / "tab_judge_confusion.tex").unlink(missing_ok=True)
 
     print(json.dumps({k: v for k, v in out.items() if k not in ("judges",)}, indent=2))
     print("judges:", json.dumps(out["judges"], indent=2))

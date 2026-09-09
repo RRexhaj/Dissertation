@@ -3,6 +3,7 @@
 \caption{Run-to-run stability over 3 independent runs: mean $\pm$ SD of the per-run cell means for fact precision (alias) and hallucination (judge 1), the share of questions whose hallucination flag was identical in every run, and the mean within-question SD of fact precision.}
 \label{tab:stability}
 {\footnotesize\setstretch{1.0}\setlength{\tabcolsep}{4pt}\def\arraystretch{1.2}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{llcccc}
 \toprule
 \textbf{Model} & \textbf{Condition} & \textbf{Fact precision} & \textbf{Hallucination} & \textbf{Flag consistency} & \textbf{Within-question SD} \\
@@ -20,6 +21,6 @@ GPT-5 mini & RAG & 0.98 $\pm$ 0.012 & 1.4\% $\pm$ 2.4\% & 96\% & 0.024 \\
 GPT-5.5 & RAG & 0.97 $\pm$ 0.000 & 2.8\% $\pm$ 2.4\% & 92\% & 0.000 \\
  & Baseline & 0.78 $\pm$ 0.055 & 22.2\% $\pm$ 8.7\% & 71\% & 0.086 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 }
 \end{table}

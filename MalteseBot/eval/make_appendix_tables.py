@@ -41,7 +41,7 @@ def main() -> int:
     aliases.pop("_meta", None)
 
     # --- compact table for Chapter 3 ---------------------------------------
-    lines = ["\\begin{table}[H]", "\\centering",
+    lines = ["\\begin{table}[tbp]", "\\centering",
              "\\caption{The 24-item gold-standard question set: identifier, language, topic, difficulty and question. "
              "Reference answers, key facts and expected citations are given in full in Appendix~B.}",
              "\\label{tab:gold-questions}", "{\\footnotesize\\setstretch{1.0}", "\\def\\arraystretch{1.15}",
@@ -88,7 +88,7 @@ def main() -> int:
         models = [m for m in MODEL_ORDER if any(r["model"] == m for r in rows)]
         cell = {(r["model"], r["condition"], r["id"]): r for r in rows}
         hdr = ["\\textbf{ID}"] + [f"\\textbf{{{LABEL[m]}}}" for m in models]
-        lines = ["\\begin{spacing}{1.15}", "\\footnotesize",
+        lines = ["\\begin{spacing}{1.15}", "\\scriptsize", "\\setlength{\\tabcolsep}{3pt}",
                  "Cell entries are fact precision (alias matcher) followed by the judge-1 hallucination flag "
                  "(0 = no incorrect claim, 1 = incorrect claim) for run 1: RAG value / baseline value. "
                  "Model abbreviations: 4o = GPT-4o, 4o-m = GPT-4o mini, 4.1 = GPT-4.1, 4.1-n = GPT-4.1 nano, "

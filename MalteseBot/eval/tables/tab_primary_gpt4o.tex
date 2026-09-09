@@ -3,18 +3,19 @@
 \caption{Primary comparison (GPT-4o, run 1, N = 24 paired questions): retrieval-augmented system versus no-retrieval baseline on every metric, with paired difference, bootstrap 95\% CI, test and effect size.}
 \label{tab:primary-gpt4o}
 {\footnotesize\setstretch{1.0}\setlength{\tabcolsep}{4pt}\def\arraystretch{1.2}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{lccccccc}
 \toprule
 \textbf{Metric} & \textbf{RAG} & \textbf{Baseline} & \textbf{$\Delta$ (pp)} & \textbf{95\% CI} & \textbf{Test} & \textbf{$p$} & \textbf{$r$} \\
 \midrule
-Fact precision (strict, pre-registered) & 0.92 & 0.65 & +27.1 & [+11.1, +43.8] & Wilcoxon & 0.005 & 0.87 \\
-Fact precision (alias-tolerant) & 1.00 & 0.74 & +25.7 & [+13.9, +38.2] & Wilcoxon & 0.003 & 1.00 \\
+Fact precision (strict) & 0.92 & 0.65 & +27.1 & [+11.1, +43.8] & Wilcoxon & 0.005 & 0.87 \\
+Fact precision (alias) & 1.00 & 0.74 & +25.7 & [+13.9, +38.2] & Wilcoxon & 0.003 & 1.00 \\
 Citation validity & 100.0\% & 0.0\% & +100.0 & [+100.0, +100.0] & McNemar & $<$0.001 & -- \\
-Hallucination (judge 1, GPT-4.1) & 4.2\% & 25.0\% & -20.8 & [-41.7, +0.0] & McNemar & 0.125 & -- \\
-Hallucination (judge 2, GPT-4o) & 4.2\% & 20.8\% & -16.7 & [-33.3, -4.2] & McNemar & 0.125 & -- \\
+Incorrect claim (judge 1, GPT-4.1) & 4.2\% & 25.0\% & -20.8 & [-41.7, +0.0] & McNemar & 0.125 & -- \\
+Incorrect claim (judge 2, GPT-4o) & 4.2\% & 20.8\% & -16.7 & [-33.3, -4.2] & McNemar & 0.125 & -- \\
 Omission (judge 1) & 0.0\% & 37.5\% & -37.5 & [-58.3, -16.7] & McNemar & 0.004 & -- \\
 ROUGE-L & 0.24 & 0.23 & +1.4 & [-3.6, +6.4] & Wilcoxon & 0.406 & 0.20 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 }
 \end{table}
